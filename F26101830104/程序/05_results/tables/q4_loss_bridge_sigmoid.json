@@ -1,0 +1,39 @@
+{
+  "basis": "C6 medium group, organization-grouped CV (same splitter as loss_bridge.py)",
+  "model": "S=S0+(100-S0)*r/(1+exp((L-L0)/s)), high group as floor anchor",
+  "cv_mae": {
+    "sigmoid": 9.303874543947893,
+    "linear": 9.789345683981427,
+    "mean": 10.110970830997104
+  },
+  "full_fit": {
+    "S0": 9.450468307534171,
+    "r": 0.1872412771101091,
+    "L0": 2.1571691162401394,
+    "s": 0.05559737998855773
+  },
+  "high_group_floor": {
+    "n": 7,
+    "loss_range": [
+      2.0933,
+      2.5978
+    ],
+    "average_range": [
+      5.07026822083096,
+      6.059841492942702
+    ],
+    "task_means": {
+      "LB_IFEval": 22.165077549790112,
+      "LB_BBH": 3.8620264940599216,
+      "LB_MATH": 1.251618472162279,
+      "LB_GPQA": 0.7190795781399811,
+      "LB_MUSR": 4.533258928571429,
+      "LB_MMLU_PRO": 1.4268828098615323
+    },
+    "non_IFEval_task_mean_range": [
+      1.668438675061115,
+      3.2454412127416803
+    ]
+  },
+  "conclusion": "Pythia high-comparability rows sit at the benchmark floor, so they carry no slope information; the sigmoid only slightly improves on the linear map and the mapping error stays about 9 points, so frontier forecasts remain in benchmark space."
+}

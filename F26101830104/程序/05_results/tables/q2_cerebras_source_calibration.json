@@ -1,0 +1,56 @@
+{
+  "calibration_data": "B2 semi-synthetic Cerebras trajectories only",
+  "formula": "L_B1 + offset + slope / sqrt(D_tokens_B)",
+  "B2_model_size_holdout": [
+    {
+      "held_N_B": 0.111,
+      "rows": 147,
+      "base_mae": 1.1791307491239225,
+      "calibrated_mae": 0.05376455661303094
+    },
+    {
+      "held_N_B": 0.256,
+      "rows": 147,
+      "base_mae": 1.178743070679928,
+      "calibrated_mae": 0.05495563997342444
+    },
+    {
+      "held_N_B": 0.59,
+      "rows": 147,
+      "base_mae": 1.180356268223914,
+      "calibrated_mae": 0.05459616934599019
+    },
+    {
+      "held_N_B": 1.3,
+      "rows": 147,
+      "base_mae": 1.1781869992563674,
+      "calibrated_mae": 0.05598348892991529
+    },
+    {
+      "held_N_B": 2.7,
+      "rows": 147,
+      "base_mae": 1.178040693347354,
+      "calibrated_mae": 0.05399689918126505
+    },
+    {
+      "held_N_B": 6.7,
+      "rows": 147,
+      "base_mae": 1.1778367577757707,
+      "calibrated_mae": 0.054714919940488306
+    },
+    {
+      "held_N_B": 13.0,
+      "rows": 147,
+      "base_mae": 1.1767981490359831,
+      "calibrated_mae": 0.05513765696451395
+    }
+  ],
+  "B2_held_trajectory_mean_MAE": 0.05473561870694688,
+  "B2_unadjusted_MAE": 1.1784418124918914,
+  "B2_full_fit_offset": 0.6661262796935579,
+  "B2_full_fit_slope": 12.483353491232174,
+  "B4_Cerebras_real_cross_family_points": 7,
+  "B4_Cerebras_raw_MAE": 0.18592543414822346,
+  "B4_Cerebras_after_B2_calibration_MAE": 0.755912000859041,
+  "interpretation": "B2 adaptation is source-specific; worsening on B4 is evidence against a universal family correction."
+}

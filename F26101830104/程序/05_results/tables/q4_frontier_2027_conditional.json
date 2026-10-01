@@ -1,0 +1,111 @@
+{
+  "target_date": "2027-09-23",
+  "as_of": "2026-09-23",
+  "horizon_months": 12,
+  "score_population": "C1 pretrained with recorded license, six complete benchmark tasks",
+  "frontier_definition": "90th conditional score percentile, not observed or theoretical maximum",
+  "same_protocol_2025_holdout": {
+    "train_2024": 184,
+    "test_2025": 49,
+    "covered": 45,
+    "coverage": 0.9183673469387755,
+    "coverage_binomial_95pct_interval": [
+      0.803985816521109,
+      0.9773091193569283
+    ],
+    "pinball_loss": 0.8096437811496254
+  },
+  "compute_to_size": {
+    "matched_open_weight_pretrained": 55,
+    "time_held_2024_MAE_log10_N": 0.5474750643797486,
+    "all_sample_coefficient_log10N_per_log10C": 0.4120939292032107
+  },
+  "C4_q90_compute_reference": {
+    "2024": {
+      "n": 131,
+      "q90_compute": 3.3e+24
+    },
+    "2025": {
+      "n": 87,
+      "q90_compute": 4.552800000000002e+24
+    }
+  },
+  "historical_log10_compute_growth_2024_to_2025": 0.1397646327223813,
+  "years_beyond_last_measured_C1_score": 2.54072553045859,
+  "scenarios": [
+    {
+      "compute_scenario": "no_further_compute_growth",
+      "time_scenario": "time_frozen_at_last_score",
+      "q90_compute_FLOPs": 4.55280000000002e+24,
+      "implied_N_B": 37.492851476140835,
+      "conditional_upper_quantile_score_0_to_100": 27.019630255866318,
+      "score_raw": 27.019630255866318
+    },
+    {
+      "compute_scenario": "no_further_compute_growth",
+      "time_scenario": "half_time_trend",
+      "q90_compute_FLOPs": 4.55280000000002e+24,
+      "implied_N_B": 37.492851476140835,
+      "conditional_upper_quantile_score_0_to_100": 27.019630255866318,
+      "score_raw": 27.019630255866318
+    },
+    {
+      "compute_scenario": "no_further_compute_growth",
+      "time_scenario": "full_time_trend",
+      "q90_compute_FLOPs": 4.55280000000002e+24,
+      "implied_N_B": 37.492851476140835,
+      "conditional_upper_quantile_score_0_to_100": 27.019630255866318,
+      "score_raw": 27.019630255866318
+    },
+    {
+      "compute_scenario": "half_2024_to_2025_growth",
+      "time_scenario": "time_frozen_at_last_score",
+      "q90_compute_FLOPs": 6.011822278832491e+24,
+      "implied_N_B": 42.043568130883806,
+      "conditional_upper_quantile_score_0_to_100": 27.40635216986179,
+      "score_raw": 27.40635216986179
+    },
+    {
+      "compute_scenario": "half_2024_to_2025_growth",
+      "time_scenario": "half_time_trend",
+      "q90_compute_FLOPs": 6.011822278832491e+24,
+      "implied_N_B": 42.043568130883806,
+      "conditional_upper_quantile_score_0_to_100": 27.40635216986179,
+      "score_raw": 27.40635216986179
+    },
+    {
+      "compute_scenario": "half_2024_to_2025_growth",
+      "time_scenario": "full_time_trend",
+      "q90_compute_FLOPs": 6.011822278832491e+24,
+      "implied_N_B": 42.043568130883806,
+      "conditional_upper_quantile_score_0_to_100": 27.40635216986179,
+      "score_raw": 27.40635216986179
+    },
+    {
+      "compute_scenario": "same_2024_to_2025_growth",
+      "time_scenario": "time_frozen_at_last_score",
+      "q90_compute_FLOPs": 7.93841308914651e+24,
+      "implied_N_B": 47.146630666412236,
+      "conditional_upper_quantile_score_0_to_100": 27.79307408385725,
+      "score_raw": 27.79307408385725
+    },
+    {
+      "compute_scenario": "same_2024_to_2025_growth",
+      "time_scenario": "half_time_trend",
+      "q90_compute_FLOPs": 7.93841308914651e+24,
+      "implied_N_B": 47.146630666412236,
+      "conditional_upper_quantile_score_0_to_100": 27.79307408385725,
+      "score_raw": 27.79307408385725
+    },
+    {
+      "compute_scenario": "same_2024_to_2025_growth",
+      "time_scenario": "full_time_trend",
+      "q90_compute_FLOPs": 7.93841308914651e+24,
+      "implied_N_B": 47.146630666412236,
+      "conditional_upper_quantile_score_0_to_100": 27.79307408385725,
+      "score_raw": 27.79307408385725
+    }
+  ],
+  "uncertainty_note": "2025 backtest covers a short horizon; no empirical 2027 score calibration. Scenario spread is not a 95% prediction interval. Weight licenses require individual review.",
+  "relationship_to_loss_bridge": "C6 bridge is separately diagnosed and too weak for precise transfer from Q3 Loss; this forecast uses benchmark scores directly."
+}

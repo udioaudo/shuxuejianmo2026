@@ -1,0 +1,50 @@
+{
+  "candidate_unique_name_matches": 65,
+  "verified_matches": 55,
+  "matched_type_counts": {
+    "🟢 pretrained": 55
+  },
+  "match_rule": "unique lowercase alphanumeric model basename; same open-weight C4 model, C1/C4 parameter ratio 0.8-1.25, complete scores and positive compute",
+  "tokens_available": 39,
+  "license_populated": 55,
+  "year_counts": {
+    "2021": 2,
+    "2022": 2,
+    "2023": 19,
+    "2024": 32
+  },
+  "temporal_holdout_pre_2024_to_2024": {
+    "scale_only": {
+      "test_n": 32,
+      "mae": 8.688687530983037,
+      "rmse": 11.021806655313068,
+      "baseline_mae": 11.335937487878017,
+      "coefficients": {
+        "log10_C": 2.8441707688337123
+      },
+      "intercept": -55.444523073016704
+    },
+    "scale_plus_time": {
+      "test_n": 32,
+      "mae": 7.42808681257899,
+      "rmse": 9.254190189247767,
+      "baseline_mae": 11.335937487878017,
+      "coefficients": {
+        "log10_C": 2.8696569093720137,
+        "years_since_2021": 1.972556138549972
+      },
+      "intercept": -60.26916822559318
+    }
+  },
+  "all_matched_association": {
+    "scale_coefficient_per_log10_FLOPs": 6.196483344860219,
+    "non_scale_time_coefficient_per_year": 3.134577351284993
+  },
+  "cohort_2023_to_2024": {
+    "observed_score_change": 10.264139305685896,
+    "model_scale_association": 7.034200689554516,
+    "model_time_association": 3.207693776046584,
+    "unexplained_difference": 0.022244840084796547
+  },
+  "causal_status": "observational association only; date term absorbs unmeasured selection and technology"
+}

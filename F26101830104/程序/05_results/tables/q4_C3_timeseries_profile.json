@@ -1,0 +1,72 @@
+{
+  "source": "C3 leaderboard_extended_timeseries.csv",
+  "rows": 4599,
+  "by_source_and_year": [
+    {
+      "year": 2019,
+      "source": "Historical (papers/reports)",
+      "n": 1,
+      "median": 5.0,
+      "q90": 5.0,
+      "max": 5.0
+    },
+    {
+      "year": 2020,
+      "source": "Historical (papers/reports)",
+      "n": 1,
+      "median": 50.0,
+      "q90": 50.0,
+      "max": 50.0
+    },
+    {
+      "year": 2021,
+      "source": "Historical (papers/reports)",
+      "n": 2,
+      "median": 3.5,
+      "q90": 4.7,
+      "max": 5.0
+    },
+    {
+      "year": 2022,
+      "source": "Historical (papers/reports)",
+      "n": 7,
+      "median": 12.0,
+      "q90": 32.0,
+      "max": 35.0
+    },
+    {
+      "year": 2023,
+      "source": "Historical (papers/reports)",
+      "n": 13,
+      "median": 12.0,
+      "q90": 24.000000000000004,
+      "max": 35.0
+    },
+    {
+      "year": 2024,
+      "source": "Historical (papers/reports)",
+      "n": 2,
+      "median": 5.5,
+      "q90": 7.5,
+      "max": 8.0
+    },
+    {
+      "year": 2024,
+      "source": "Open LLM Leaderboard",
+      "n": 2671,
+      "median": 21.11,
+      "q90": 35.11,
+      "max": 52.08
+    },
+    {
+      "year": 2025,
+      "source": "Open LLM Leaderboard",
+      "n": 1902,
+      "median": 23.48,
+      "q90": 39.67,
+      "max": 47.22
+    }
+  ],
+  "usage": "historical ability time-series context only; matched C1/C4 model drives association fit",
+  "warning": "Early historical years have tiny samples; year-specific maximum is not a stable ability frontier."
+}

@@ -1,0 +1,315 @@
+Started 2026-09-25T15:33:22.102925+00:00
+q1/quality_baseline.py: exit=0
+{"rows": 272505, "overlap": {"A1_A2": 1419, "A1_A3": 10000, "A2_A3": 0}, "scores": {"A1": {"rows": 51230, "scored_equal": 51230, "conflict_count": 6}, "A2": {"rows": 17523, "scored_equal": 17523, "conflict_count": 0}, "A3": {"rows": 203752, "scored_equal": 203752, "conflict_count": 0}}, "status": "exploratory_not_validated_Q_for_downstream_optimization"}
+
+q1/conflict_resolution.py: exit=0
+  A1 arxiv         n=  1419 conflicts=    1 Q 0.7667 -> 0.7667 (v1 0.7667) | global 0.535
+  A1 book          n=   171 conflicts=    0 Q 0.6468 -> 0.6468 (v1 0.6468) | global 0.689
+  A1 c4            n= 10000 conflicts=   12 Q 0.7070 -> 0.7070 (v1 0.7070) | global 0.653
+  A1 commoncrawl   n=  9640 conflicts=    7 Q 0.7212 -> 0.7212 (v1 0.7212) | global 0.695
+  A1 github        n= 10000 conflicts=  667 Q 0.6030 -> 0.6033 (v1 0.6021) | global 0.624
+  A1 stackexchange n= 10000 conflicts=    6 Q 0.6948 -> 0.6947 (v1 0.6947) | global 0.706
+  A1 wikipedia     n= 10000 conflicts=    1 Q 0.6390 -> 0.6390 (v1 0.6390) | global 0.581
+  A2 arxiv         n= 17523 conflicts=   24 Q 0.7645 -> 0.7644 (v1 0.7645) | global 0.525
+  A3 github        n=203752 conflicts=14218 Q 0.6022 -> 0.6025 (v1 0.6013) | global 0.624
+  A1 education_vs_no_ad        c4           n=    6 P(hi)=0.046 P(lo)=0.051 share_hi 0.50 (v1 0.98) Q 0.739 -> 0.739 (v1 0.770)
+  A1 reasoning_vs_readability  github       n=  114 P(hi)=0.033 P(lo)=0.180 share_hi 0.67 (v1 0.23) Q 0.618 -> 0.631 (v1 0.596)
+  A1 fluency_vs_cleanliness    commoncrawl  n=    7 P(hi)=0.681 P(lo)=0.006 share_hi 0.07 (v1 0.44) Q 0.668 -> 0.636 (v1 0.664)
+  A1 fluency_vs_cleanliness    github       n=  579 P(hi)=0.249 P(lo)=0.298 share_hi 0.53 (v1 0.35) Q 0.611 -> 0.614 (v1 0.598)
+  A2 reasoning_vs_readability  arxiv        n=    9 P(hi)=0.995 P(lo)=0.001 share_hi 0.00 (v1 0.00) Q 0.630 -> 0.592 (v1 0.592)
+  A2 fluency_vs_cleanliness    arxiv        n=   15 P(hi)=0.962 P(lo)=0.000 share_hi 0.00 (v1 0.21) Q 0.610 -> 0.572 (v1 0.588)
+  A3 reasoning_vs_readability  github       n= 2487 P(hi)=0.033 P(lo)=0.180 share_hi 0.67 (v1 0.23) Q 0.620 -> 0.632 (v1 0.597)
+  A3 fluency_vs_cleanliness    github       n=12368 P(hi)=0.249 P(lo)=0.298 share_hi 0.53 (v1 0.35) Q 0.608 -> 0.611 (v1 0.595)
+ stability A3 {'education_vs_no_ad': (0.5, 0.5), 'qurater_vs_cleanliness': (0.85, 0.84), 'reasoning_vs_readability': (0.67, 0.67), 'fluency_vs_cleanliness': (0.53, 0.54)}
+ stability A2 {'education_vs_no_ad': (0.5, 0.5), 'qurater_vs_cleanliness': (0.02, 0.03), 'reasoning_vs_readability': (0.0, 0.0), 'fluency_vs_cleanliness': (0.0, 0.01)}
+
+q1/text_check_samples.py: exit=0
+D:\project_commercial\2026数学建模竞赛\F_算力资源配置\05_results\text_check\q1_text_check_samples.md 27 samples
+
+q1/lexical_mapping.py: exit=0
+{"A1_processed": 51230, "A18_processed": 138034, "known_top1": 5, "known_pairs": 6, "known_top3": 5, "unknown": 11, "sample_unknown_top1": {"dm_mathematics": "stackexchange", "freelaw": "commoncrawl", "nih_exporter": "commoncrawl", "pubmed_central": "commoncrawl", "philpapers": "commoncrawl", "enron_emails": "c4", "ubuntu_irc": "c4", "europarl": "wikipedia", "hackernews": "c4", "pubmed_abstracts": "commoncrawl", "uspto_backgrounds": "commoncrawl"}}
+
+q1/mixture_baseline.py: exit=0
+{
+  "train_cv_mean_mae": 0.4172661860604939,
+  "sets": {
+    "train": {
+      "n": 512,
+      "status": "real_train",
+      "mae_mean_over_13": 0.4033755634044358,
+      "baseline_mae_mean_over_13": 0.6426953335824062,
+      "spearman_mean_over_13": 0.8429846596866243,
+      "reference_loss_mean_over_13": 5.344656776171178,
+      "predicted_loss_mean_over_13": 5.344656776171178
+    },
+    "test_1m": {
+      "n": 256,
+      "status": "real_holdout_same_scale",
+      "mae_mean_over_13": 0.385847566611854,
+      "baseline_mae_mean_over_13": 0.6193481061510773,
+      "spearman_mean_over_13": 0.8320488428085989,
+      "reference_loss_mean_over_13": 5.282281966306842,
+      "predicted_loss_mean_over_13": 5.331238285519246
+    },
+    "test_60m": {
+      "n": 256,
+      "status": "real_holdout_cross_scale",
+      "mae_mean_over_13": 1.5143262339365562,
+      "baseline_mae_mean_over_13": 1.5236709562660298,
+      "spearman_mean_over_13": 0.8307108540063736,
+      "reference_loss_mean_over_13": 3.8229111776185722,
+      "predicted_loss_mean_over_13": 5.331238285519246
+    },
+    "test_1B": {
+      "n": 64,
+      "status": "real_holdout_cross_scale",
+      "mae_mean_over_13": 3.188168369345422,
+      "baseline_mae_mean_over_13": 3.1190864943142063,
+      "spearman_mean_over_13": 0.7251831501831502,
+      "reference_loss_mean_over_13": 2.2255702818569714,
+      "predicted_loss_mean_over_13": 5.413337504553464
+    },
+    "est_10b": {
+      "n": 63,
+      "status": "estimated_losses_not_observations",
+      "mae_mean_over_13": 3.5765307074498045,
+      "baseline_mae_mean_over_13": 3.547197801812203,
+      "spearman_mean_over_13": 0.49052291236436446,
+      "reference_loss_mean_over_13": 1.7974589743589744,
+      "predicted_loss_mean_over_13": 5.372436614085484
+    },
+    "est_70b": {
+      "n": 63,
+      "status": "estimated_losses_not_observations",
+      "mae_mean_over_13": 3.9591050664241627,
+      "baseline_mae_mean_over_13": 3.9301108665252684,
+      "spearman_mean_over_13": 0.41517636184862367,
+      "reference_loss_mean_over_13": 1.4145459096459094,
+      "predicted_loss_mean_over_13": 5.372436614085484
+    }
+  }
+}
+
+q1/mixture_interactions.py: exit=0
+{"feature_count": 152, "alpha": 100, "cv_mae": 0.38454713356776343, "linear_cv_mae": 0.4172661860604939, "square_only_cv_mae": 0.326378034905595, "sets": {"train": {"n": 512, "mae_mean_13": 0.2953027296555671, "linear_mae_mean_13": 0.4033755634044358, "square_only_mae_mean_13": 0.30284891877969483, "spearman_mean_13": 0.9144906715990888, "data_status": "real"}, "test_1m": {"n": 256, "mae_mean_13": 0.35159188759093946, "linear_mae_mean_13": 0.385847566611854, "square_only_mae_mean_13": 0.3058486063261571, "spearman_mean_13": 0.8346043254925435, "data_status": "real"}, "test_60m": {"n": 256, "mae_mean_13": 1.4686400407957363, "linear_mae_mean_13": 1.5143262339365562, "square_only_mae_mean_13": 1.4926219106112717, "spearman_mean_13": 0.8376024481926861, "data_status": "real"}, "test_1B": {"n": 64, "mae_mean_13": 2.9503985356816633, "linear_mae_mean_13": 3.188168369345422, "square_only_mae_mean_13": 2.996710812663836, "spearman_mean_13": 0.805540293040293, "data_status": "real"}, "est_10b": {"n": 63, "mae_mean_13": 3.5639990130996484, "linear_mae_mean_13": 3.5765307074498045, "square_only_mae_mean_13": 3.568310950797357, "spearman_mean_13": 0.4982807960044049, "data_status": "estimated_not_observed"}, "est_70b": {"n": 63, "mae_mean_13": 3.9465733720740075, "linear_mae_mean_13": 3.9591050664241627, "square_only_mae_mean_13": 3.951224015510422, "spearman_mean_13": 0.41436034500599983, "data_status": "estimated_not_observed"}}}
+
+q1/external_robustness.py: exit=0
+{"n": 256, "improved_domains": 13, "mean_improvement": 0.3134994998249202, "bootstrap_interval": [0.29843545651760645, 0.3287570824752684], "worst_domain": {"domain_loss": "metric/the_pile_hackernews_val_loss", "model_MAE": 0.11577208420249784, "baseline_MAE": 0.2837282214895822, "MAE_improvement": 0.16795613728708436, "improved": true}}
+
+q1/cross_scale_rank.py: exit=0
+{
+ "test_1m": {
+  "n_recipes": 256,
+  "recipes_inside_1M_training_support": 248,
+  "spearman_mean_13_inside_support": 0.8952899834335988,
+  "raw_mae_mean_13": 0.3058486063261571,
+  "spearman_mean_13": 0.8941263953201752,
+  "top10pct_hit_rate_mean_13": 0.7692307692307693,
+  "calibrated_mae_mean_13": 0.31972384818590255,
+  "slope_b_median_13": 0.9953849632531712
+ },
+ "test_60m": {
+  "n_recipes": 256,
+  "recipes_inside_1M_training_support": 248,
+  "spearman_mean_13_inside_support": 0.8985175691363114,
+  "raw_mae_mean_13": 1.4926219106112717,
+  "spearman_mean_13": 0.8977550530837897,
+  "top10pct_hit_rate_mean_13": 0.7781065088757397,
+  "calibrated_mae_mean_13": 0.23599673512708436,
+  "slope_b_median_13": 0.8954559422525763
+ },
+ "test_1B": {
+  "n_recipes": 64,
+  "recipes_inside_1M_training_support": 60,
+  "spearman_mean_13_inside_support": 0.8517023959646911,
+  "raw_mae_mean_13": 2.996710812663836,
+  "spearman_mean_13": 0.8232847280924204,
+  "top10pct_hit_rate_mean_13": 0.8333333333333333,
+  "calibrated_mae_mean_13": 0.129238766411944,
+  "slope_b_median_13": 0.3875076692185021
+ },
+ "est_10b": {
+  "n_recipes": 63,
+  "recipes_inside_1M_training_support": 63,
+  "spearman_mean_13_inside_support": 0.45111570897371095,
+  "raw_mae_mean_13": 3.568310950797357,
+  "spearman_mean_13": 0.45111570897371095,
+  "top10pct_hit_rate_mean_13": 0.4487179487179486,
+  "calibrated_mae_mean_13": 0.18032878285509302,
+  "slope_b_median_13": 0.21230417648324254
+ },
+ "est_70b": {
+  "n_recipes": 63,
+  "recipes_inside_1M_training_support": 63,
+  "spearman_mean_13_inside_support": 0.36328290025877286,
+  "raw_mae_mean_13": 3.951224015510422,
+  "spearman_mean_13": 0.36328290025877286,
+  "top10pct_hit_rate_mean_13": 0.41025641025641024,
+  "calibrated_mae_mean_13": 0.16249656258785622,
+  "slope_b_median_13": 0.1371351705756909
+ }
+}
+observed 1M vs 60M spearman 0.993739381041252
+[('dm_mathematics', -0.0397), ('ubuntu_irc', -0.0374), ('hackernews', -0.0269), ('enron_emails', -0.0243), ('nih_exporter', -0.0177), ('philpapers', -0.0066), ('europarl', 0.0086), ('gutenberg_pg_19', 0.0413), ('stackexchange', 0.054), ('wikipedia_en', 0.065), ('pubmed_abstracts', 0.0904), ('freelaw', 0.098), ('pubmed_central', 0.1023), ('uspto_backgrounds', 0.1123), ('github', 0.1125), ('arxiv', 0.1159), ('pile_cc', 0.1216)]
+
+q2/classical_baseline.py: exit=0
+{"fitted_params": [1.6897975629219435, 0.35398032066811846, 1.2403055835428554, 0.33997658189411734, 0.27987812854568583], "jacobian_rank": 5, "jacobian_condition": 33.83473206512886, "by_source": {"B1": {"n": 1176, "mae": 0.00010523191301790055, "spearman": 0.9999996458388953, "fraction_N_outside_B1": 0.0, "fraction_D_outside_B1": 0.0}, "B2": {"n": 1029, "mae": 1.1784418124918914, "spearman": 0.7881022686524627, "fraction_N_outside_B1": 0.14285714285714285, "fraction_D_outside_B1": 0.8639455782312925}, "B4": {"n": 57, "mae": 0.22726329326675218, "spearman": 0.9829816454561005, "fraction_N_outside_B1": 0.2982456140350877, "fraction_D_outside_B1": 0.8421052631578947}, "B5": {"n": 44, "mae": 0.17072153146269867, "spearman": 0.9588075695723213, "fraction_N_outside_B1": 0.4318181818181818, "fraction_D_outside_B1": 0.7272727272727273}}}
+
+q2/run_holdout.py: exit=0
+{"trajectory_count": 8, "mean_trajectory_mae": 0.00010787816909726267, "max_trajectory_mae": 0.00016875512558499442}
+
+q2/quality_scenario.py: exit=0
+main form M2_N_D_decay {'theta_N': 0.1618, 'theta_D': 0.0396, 'c': 0.4288, 'kappa': 0.9922} CI {'c': [0.3892, 0.4702], 'kappa': [0.9307, 1.0736], 'theta_N': [0.1476, 0.1763], 'theta_D': [0.0201, 0.0585]}
+M0_scale_free                k=2 BIC=-1843.0 B6 MAE=0.0600 B7 MAE=0.0446 cellslope MAE=0.0922 {'theta_N': 0.0, 'theta_D': 0.0, 'c': 0.3622, 'kappa': 0.9907}
+M1_N_decay                   k=3 BIC=-2113.7 B6 MAE=0.0405 B7 MAE=0.0324 cellslope MAE=0.0392 {'theta_N': 0.1621, 'theta_D': 0.0, 'c': 0.3568, 'kappa': 0.9915}
+M2_N_D_decay                 k=4 BIC=-2128.2 B6 MAE=0.0394 B7 MAE=0.0322 cellslope MAE=0.0331 {'theta_N': 0.1618, 'theta_D': 0.0396, 'c': 0.4288, 'kappa': 0.9922}
+X1_multiplicative            k=2 BIC=-1983.1 B6 MAE=0.0498 B7 MAE=0.0383 cellslope MAE=nan {'theta_N': 0.0, 'theta_D': 0.0, 'c': 0.15, 'kappa': 0.9916}
+X2_multiplicative_N_decay    k=3 BIC=-2127.4 B6 MAE=0.0398 B7 MAE=0.0323 cellslope MAE=nan {'theta_N': 0.1032, 'theta_D': 0.0, 'c': 0.1452, 'kappa': 0.9919}
+LR M0_scale_free -> M1_N_decay LR=276.6 df=1 p=4.14e-62
+LR M1_N_decay -> M2_N_D_decay LR=20.3 df=1 p=6.50e-06
+LR M0_scale_free -> M2_N_D_decay LR=296.9 df=2 p=3.33e-65
+within-cell slopes [(0.07, -0.546), (0.16, -0.486), (0.41, -0.424), (0.7, -0.374), (1.0, -0.338), (2.8, -0.321), (4.0, -0.276), (6.9, -0.263), (11.97, -0.233)]
+B8 {'status': 'Q<1 rows unusable for the quality term', 'rows': 1704, 'rows_Q_eq_1': 138, 'Q_eq_1_vs_classical': {'n': 138, 'mae': 0.028895813059597566, 'rmse': 0.0355024038523145}, 'Q_lt_1_rows_with_loss_below_E': 1095, 'Q_lt_1_rows': 1566, 'min_loss_Q_lt_1': 0.5, 'mean_within_cell_slope_dL_dQ': 1.9916696530510347}
+
+q2/conditional_generalized_law.py: exit=0
+{"delta_mix_loss_for_lambda_1": -0.02956628759920843, "conditional_equivalent_N_B_for_Q_plus_0p1": 1.3074655934382629, "status": "conditional_not_independently_identified"}
+
+q2/large_scale_diagnostic.py: exit=0
+{"B1_observed_range_B": {"N": [0.070542, 11.965825], "D": [0.134, 299.893]}, "B9": {"rows": 132, "N_range_B": [100.0, 10000.0], "positive_D_range_B": [0.1, 36000.0], "D_zero_or_missing_rows": 4, "N_outside_B1": 132, "positive_D_outside_B1": 105}, "B10": {"rows": 128, "numeric_rows": 128, "N_outside_B1": 128, "D_outside_B1": 105, "MAE_vs_estimated_not_observed_loss": 0.000614048832997963, "estimated_loss_mean": 2.00786328125, "model_prediction_mean": 2.0084773300829983}, "conclusion": "B9 shows distance beyond training support; B10 estimates are not independent real verification."}
+
+q2/source_calibration.py: exit=0
+{"heldout_B2_MAE": 0.05473561870694688, "unadjusted_B2_MAE": 1.1784418124918914, "B4_raw_MAE": 0.18592543414822346, "B4_adjusted_MAE": 0.755912000859041}
+
+q3/budget_scenarios.py: exit=0
+{"case_count": 90, "C7_contexts": [2048, 4096, 8192, 32768, 131072], "q0_alternatives": {"equal_22": 0.6751704350867402, "equal_3_groups": 0.7282367142286506}, "budget_summary": [{"budget": 1e+19, "n_cases": 30, "median_spent_fraction": 1.000000000029456, "N_bound_cases": 0, "D_bound_cases": 0, "Q_upper_cases": 10}, {"budget": 1e+22, "n_cases": 30, "median_spent_fraction": 1.0000000000515756, "N_bound_cases": 0, "D_bound_cases": 1, "Q_upper_cases": 30}, {"budget": 1e+24, "n_cases": 30, "median_spent_fraction": 0.028415394237680112, "N_bound_cases": 30, "D_bound_cases": 30, "Q_upper_cases": 30}]}
+
+q3/extrapolated_budgets.py: exit=0
+{"cases": 90, "high_budget_32768": [{"kind": "exponential", "N_B": 29.883066354505242, "D_B": 2641.3115695653855, "Q": 1.0, "spent_fraction": 1.0000000000145883, "outside_B1_N": true, "outside_B1_D": true}, {"kind": "power", "N_B": 29.928473201288753, "D_B": 2633.8588867594403, "Q": 0.9999999999999999, "spent_fraction": 1.0000000000195337, "outside_B1_N": true, "outside_B1_D": true}, {"kind": "logarithmic", "N_B": 29.630690282032806, "D_B": 2683.3261968305274, "Q": 0.9999999999999999, "spent_fraction": 1.0000000000013645, "outside_B1_N": true, "outside_B1_D": true}]}
+
+q3/transition_analysis.py: exit=0
+{"cases": 6, "context": 32768, "brackets": [{"Q0": "equal_22", "cost": "exponential", "starts": {"status": "bracketed", "lower_FLOPs": 4.2169650342858225e+18, "upper_FLOPs": 5.623413251903491e+18}, "saturates": {"status": "bracketed", "lower_FLOPs": 5.6234132519034905e+19, "upper_FLOPs": 7.498942093324558e+19}, "nonmonotone": 0}, {"Q0": "equal_22", "cost": "power", "starts": {"status": "bracketed", "lower_FLOPs": 1.3335214321633241e+19, "upper_FLOPs": 1.7782794100389229e+19}, "saturates": {"status": "bracketed", "lower_FLOPs": 3.162277660168379e+19, "upper_FLOPs": 4.216965034285823e+19}, "nonmonotone": 0}, {"Q0": "equal_22", "cost": "logarithmic", "starts": {"status": "at_or_below_grid", "upper_FLOPs": 1e+18}, "saturates": {"status": "at_or_below_grid", "upper_FLOPs": 1e+18}, "nonmonotone": 0}, {"Q0": "equal_3_groups", "cost": "exponential", "starts": {"status": "bracketed", "lower_FLOPs": 7.498942093324558e+18, "upper_FLOPs": 1e+19}, "saturates": {"status": "bracketed", "lower_FLOPs": 5.6234132519034905e+19, "upper_FLOPs": 7.498942093324558e+19}, "nonmonotone": 0}, {"Q0": "equal_3_groups", "cost": "power", "starts": {"status": "bracketed", "lower_FLOPs": 1.7782794100389229e+19, "upper_FLOPs": 2.3713737056616554e+19}, "saturates": {"status": "bracketed", "lower_FLOPs": 3.162277660168379e+19, "upper_FLOPs": 4.216965034285823e+19}, "nonmonotone": 0}, {"Q0": "equal_3_groups", "cost": "logarithmic", "starts": {"status": "at_or_below_grid", "upper_FLOPs": 1e+18}, "saturates": {"status": "at_or_below_grid", "upper_FLOPs": 1e+18}, "nonmonotone": 0}]}
+
+q3/structural_transition.py: exit=0
+Q0 0.6752 base context 4096
+1e+19 exponential  N=0.275B D=4.9B Q=0.718 D/N=18 L=3.1754 shares T/Q/A=0.808/0.082/0.110 R2_Q_interior outsideB1=False
+1e+19 power        N=0.252B D=5.8B Q=0.675 D/N=23 L=3.1768 shares T/Q/A=0.880/0.000/0.120 R1_Q_at_baseline outsideB1=False
+1e+19 logarithmic  N=0.302B D=3.6B Q=1.000 D/N=12 L=3.0866 shares T/Q/A=0.657/0.254/0.090 R3_Q_at_upper_bound outsideB1=False
+1e+22 exponential  N=5.404B D=248.1B Q=1.000 D/N=46 L=2.1543 shares T/Q/A=0.804/0.086/0.110 R3_Q_at_upper_bound outsideB1=False
+1e+22 power        N=5.474B D=242.2B Q=1.000 D/N=44 L=2.1552 shares T/Q/A=0.795/0.096/0.109 R3_Q_at_upper_bound outsideB1=False
+1e+22 logarithmic  N=4.985B D=288.2B Q=1.000 D/N=58 L=2.1490 shares T/Q/A=0.862/0.020/0.118 R3_Q_at_upper_bound outsideB1=False
+1e+24 exponential  N=39.527B D=3662.9B Q=1.000 D/N=93 L=1.9160 shares T/Q/A=0.869/0.013/0.119 R3_Q_at_upper_bound outsideB1=True
+1e+24 power        N=39.610B D=3648.7B Q=1.000 D/N=92 L=1.9160 shares T/Q/A=0.867/0.014/0.118 R3_Q_at_upper_bound outsideB1=True
+1e+24 logarithmic  N=39.065B D=3744.0B Q=1.000 D/N=96 L=1.9156 shares T/Q/A=0.878/0.003/0.120 R3_Q_at_upper_bound outsideB1=True
+exponential analytic C1=7.721e+18 C_J=- [('R1', 'R2', '7.50e+18-1.00e+19'), ('R2', 'R3', '1.00e+20-1.33e+20')] peak share 0.319 at 1.3e+20
+power analytic C1=2.384e+19 C_J=- [('R1', 'R2', '2.37e+19-3.16e+19'), ('R2', 'R3', '5.62e+19-7.50e+19')] peak share 0.383 at 7.5e+19
+logarithmic analytic C1=4.393e+18 C_J=1.440e+18 [('R1', 'R3', '1.33e+18-1.78e+18')] peak share 0.376 at 1.8e+18
+2048 attn/train=0.068 C1 exp=8.19e+18 pow=2.53e+19 CJ log=1.52e+18
+4096 attn/train=0.137 C1 exp=7.72e+18 pow=2.38e+19 CJ log=1.44e+18
+8192 attn/train=0.273 C1 exp=6.94e+18 pow=2.14e+19 CJ log=1.30e+18
+32768 attn/train=1.092 C1 exp=4.34e+18 pow=1.34e+19 CJ log=8.16e+17
+131072 attn/train=4.369 C1 exp=1.78e+18 pow=5.49e+18 CJ log=3.98e+17
+
+q3/q0_sensitivity.py: exit=0
+reference {'A1_equal_mean': 0.6751704350867402, 'A1_grouped_mean': 0.7282367142286506, 'A1_domain_range_equal': [0.6030222663594819, 0.7667394699326444]}
+Q0=0.600 C1 exp 3.13e+18 pow 1.17e+19 CJ log 1.36e+18 | 1e19: exp:R2 Q=0.751 pow:R1 Q=0.600 log:R3 Q=1.000
+Q0=0.625 C1 exp 4.23e+18 pow 1.49e+19 CJ log 1.38e+18 | 1e19: exp:R2 Q=0.743 pow:R1 Q=0.625 log:R3 Q=1.000
+Q0=0.650 C1 exp 5.71e+18 pow 1.89e+19 CJ log 1.41e+18 | 1e19: exp:R2 Q=0.733 pow:R1 Q=0.650 log:R3 Q=1.000
+Q0=0.675 C1 exp 7.70e+18 pow 2.38e+19 CJ log 1.44e+18 | 1e19: exp:R2 Q=0.718 pow:R1 Q=0.675 log:R3 Q=1.000
+Q0=0.700 C1 exp 1.04e+19 pow 2.97e+19 CJ log 1.47e+18 | 1e19: exp:R1 Q=0.700 pow:R1 Q=0.700 log:R3 Q=1.000
+Q0=0.725 C1 exp 1.41e+19 pow 3.68e+19 CJ log 1.51e+18 | 1e19: exp:R1 Q=0.725 pow:R1 Q=0.725 log:R3 Q=1.000
+Q0=0.750 C1 exp 1.90e+19 pow 4.53e+19 CJ log 1.56e+18 | 1e19: exp:R1 Q=0.750 pow:R1 Q=0.750 log:R3 Q=1.000
+Q0=0.775 C1 exp 2.57e+19 pow 5.53e+19 CJ log 1.60e+18 | 1e19: exp:R1 Q=0.775 pow:R1 Q=0.775 log:R3 Q=1.000
+Q0=0.800 C1 exp 3.47e+19 pow 6.72e+19 CJ log 1.66e+18 | 1e19: exp:R1 Q=0.800 pow:R1 Q=0.800 log:R3 Q=1.000
+monotone {'C1_exponential': True, 'C1_power': True, 'C_J_logarithmic': True}
+
+q2/elasticity_substitution.py: exit=0
+lambda_p: {'N_h': 609856295.0584503, 'rho': 0.9256843400194097, 'max_abs_log_residual': 0.001988260212530769} {'1e+10': 0.06983365189085042, '7e+10': 0.012242230807839339, '1e+11': 0.008830145810296015}
+N=0.1B, D=20N, Q=Q0 L=3.684 eN=-0.0802 eD=-0.0797 eQ=-0.1111 perFLOP N=2.17e-19 D=2.15e-19 Q_exp=8.79e-20 Q_pow=4.92e-20 Q_log=1.17e-19
+N=1B, D=20N, Q=Q0 L=2.705 eN=-0.0520 eD=-0.0573 eQ=-0.0951 perFLOP N=1.03e-21 D=1.14e-21 Q_exp=5.53e-21 Q_pow=3.10e-21 Q_log=7.39e-21
+N=10B, D=20N, Q=Q0 L=2.212 eN=-0.0306 eD=-0.0370 eQ=-0.0732 perFLOP N=4.96e-24 D=6.01e-24 Q_exp=3.48e-22 Q_pow=1.95e-22 Q_log=4.65e-22
+N=100B, D=20N, Q=Q0 L=1.961 eN=-0.0169 eD=-0.0221 eQ=-0.0519 perFLOP N=2.43e-26 D=3.18e-26 Q_exp=2.19e-23 Q_pow=1.22e-23 Q_log=2.92e-23
+Q3 optimum C=1e+19 (power) L=3.177 eN=-0.0688 eD=-0.0688 eQ=-0.1063 perFLOP N=2.19e-20 D=2.19e-20 Q_exp=2.50e-20 Q_pow=1.40e-20 Q_log=3.34e-20
+Q3 optimum C=1e+22 (power) L=2.155 eN=-0.0313 eD=-0.0347 eQ=NA perFLOP N=7.47e-24 D=8.26e-24 Q_exp=nan Q_pow=nan Q_log=nan
+Q3 optimum C=1e+24 (power) L=1.916 eN=-0.0180 eD=-0.0182 eQ=NA perFLOP N=3.50e-26 D=3.55e-26 Q_exp=nan Q_pow=nan Q_log=nan
+scale-free comparison {'loss_gain': 0.03631580655811514, 'N_max_B': 810.3656059643812, 'note': 'old theta=0 form implied N_max; rejected by LR test on B6'}
+{'N_B': 0.1, 'D_B': 2.0, 'loss_gain_from_quality': 0.06068102270380615, 'equivalent_N_B': 0.12367902810603718, 'multiplier': 1.2367902810603717}
+{'N_B': 0.5, 'D_B': 10.0, 'loss_gain_from_quality': 0.04388113141989303, 'equivalent_N_B': 0.6487380982407633, 'multiplier': 1.2974761964815267}
+{'N_B': 1, 'D_B': 20.0, 'loss_gain_from_quality': 0.03816359620311749, 'equivalent_N_B': 1.3282426219104173, 'multiplier': 1.3282426219104173}
+{'N_B': 5, 'D_B': 100.0, 'loss_gain_from_quality': 0.027597784378470713, 'equivalent_N_B': 7.063075257089674, 'multiplier': 1.4126150514179348}
+{'N_B': 10, 'D_B': 200.0, 'loss_gain_from_quality': 0.02400190389446566, 'equivalent_N_B': 14.553550326047032, 'multiplier': 1.4553550326047033}
+{'N_B': 50, 'D_B': 1000.0, 'loss_gain_from_quality': 0.017356838302835964, 'equivalent_N_B': 78.61709614545786, 'multiplier': 1.5723419229091573}
+{'N_B': 100, 'D_B': 2000.0, 'loss_gain_from_quality': 0.01509531196937064, 'equivalent_N_B': 163.14363854956952, 'multiplier': 1.6314363854956953}
+{'N_B': 300, 'D_B': 6000.0, 'loss_gain_from_quality': 0.012098963170028565, 'equivalent_N_B': 521.2407420637804, 'multiplier': 1.7374691402126012}
+{'exponential': {'dg_FLOPs_per_token': 472358076.75951326, 'N_crossover_B': 0.2560461769217957}, 'power': {'dg_FLOPs_per_token': 766319738.199459, 'N_crossover_B': 0.39115932438595286}, 'logarithmic': {'dg_FLOPs_per_token': 242671457.85976267, 'N_crossover_B': 0.14288047497162115}}
+similar [('dm_mathematics', 'philpapers', 0.79), ('enron_emails', 'ubuntu_irc', 0.76), ('github', 'stackexchange', 0.68), ('pubmed_central', 'pubmed_abstracts', 0.62), ('wikipedia_en', 'pile_cc', 0.62), ('pubmed_abstracts', 'uspto_backgrounds', 0.6)]
+opposite [('dm_mathematics', 'pile_cc', -0.6), ('nih_exporter', 'pile_cc', -0.62), ('nih_exporter', 'europarl', -0.63), ('enron_emails', 'pubmed_abstracts', -0.7), ('enron_emails', 'uspto_backgrounds', -0.74), ('dm_mathematics', 'europarl', -0.8)]
+complements [('enron_emails', 'ubuntu_irc', -5.12), ('nih_exporter', 'ubuntu_irc', -3.85), ('dm_mathematics', 'ubuntu_irc', -3.69), ('nih_exporter', 'enron_emails', -3.49), ('ubuntu_irc', 'hackernews', -3.46), ('dm_mathematics', 'enron_emails', -3.32)]
+substitutes [('pile_cc', 'uspto_backgrounds', 0.27), ('github', 'europarl', 0.28), ('pile_cc', 'europarl', 0.31), ('pubmed_abstracts', 'uspto_backgrounds', 0.38), ('europarl', 'pubmed_abstracts', 0.41), ('europarl', 'uspto_backgrounds', 0.44)]
+
+q4/task_aggregation.py: exit=0
+{"C8_files_attempted": 1958, "C8_files_with_usable_task_results": 1958, "C8_files_fully_parsed": 1954, "C8_invalid_json_files": 4, "C8_task_blocks_recovered_from_invalid_files": 4, "C8_invalid_examples": [{"file": "DreadPoor_Winter_Dawn-8B-TIES\\results_2025-02-13T18-27-04.338360.json", "error": "Unterminated string starting at: line 1453 column 22 (char 65388)"}, {"file": "FINGU-AI_Chocolatine-Fusion-14B\\results_2025-02-13T18-27-04.338360.json", "error": "Unterminated string starting at: line 1162 column 22 (char 48159)"}, {"file": "Intel_neural-chat-7b-v3-3\\results_2025-02-13T18-27-04.338360.json", "error": "Unterminated string starting at: line 1194 column 11 (char 49140)"}, {"file": "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1\\results_2025-02-13T18-27-04.338360.json", "error": "Expecting property name enclosed in double quotes: line 1090 column 4 (char 45805)"}], "unique_model_names": 1864, "files_with_any_valid_BBH_subtask": 1958, "median_BBH_subtasks_per_file": 24.0, "C1_exact_name_join_rows": 1901, "C1_joined_with_10plus_tasks": 1901, "C1_BBH_vs_C8_subtask_mean_spearman": 0.9971342081968895, "C1_BBH_vs_C8_subtask_mean_mae_pct": 21.279143242194248, "metric_definition": "unweighted mean of available leaderboard_bbh_* acc_norm,none values times 100", "scope": "descriptive task aggregation; no equivalence claim to leaderboard BBH protocol"}
+
+q4/timeseries_profile.py: exit=0
+{"rows": 4599, "year_source_cells": 8, "recent": [{"year": 2024, "source": "Historical (papers/reports)", "n": 2, "median": 5.5, "q90": 7.5, "max": 8.0}, {"year": 2024, "source": "Open LLM Leaderboard", "n": 2671, "median": 21.11, "q90": 35.11, "max": 52.08}, {"year": 2025, "source": "Open LLM Leaderboard", "n": 1902, "median": 23.48, "q90": 39.67, "max": 47.22}]}
+
+q4/loss_bridge.py: exit=0
+{"high": {"n": 7, "validation": "LOO", "slope_per_loss": -0.8816640389379025, "intercept": 7.671652427888839, "mae": 0.47810768059179104, "rmse": 0.5528338936058492, "baseline_mae": 0.3755617007914142, "spearman_raw": -0.6071428571428572, "loss_range": [2.0933, 2.5978], "score_range": [5.07026822083096, 6.059841492942702], "organizations": 1, "observed_score_sd": 0.39296291756970786}, "medium": {"n": 68, "validation": "organization_grouped_CV", "slope_per_loss": -19.184607035173126, "intercept": 61.43367686694395, "mae": 9.789345683981438, "rmse": 11.995827038845729, "baseline_mae": 10.110970830997104, "spearman_raw": -0.5087243231340064, "loss_range": [1.65, 2.84], "score_range": [3.795510241848182, 47.98045991216864], "organizations": 11, "observed_score_sd": 11.446657783462962}}
+
+q4/loss_bridge_sigmoid.py: exit=0
+{"cv_mae": {"sigmoid": 9.303874543947893, "linear": 9.789345683981427, "mean": 10.110970830997104}, "full_fit": {"S0": 9.450468307534171, "r": 0.1872412771101091, "L0": 2.1571691162401394, "s": 0.05559737998855773}, "floor": {"n": 7, "loss_range": [2.0933, 2.5978], "average_range": [5.07026822083096, 6.059841492942702], "task_means": {"LB_IFEval": 22.165077549790112, "LB_BBH": 3.8620264940599216, "LB_MATH": 1.251618472162279, "LB_GPQA": 0.7190795781399811, "LB_MUSR": 4.533258928571429, "LB_MMLU_PRO": 1.4268828098615323}, "non_IFEval_task_mean_range": [1.668438675061115, 3.2454412127416803]}}
+
+q4/scale_time_diagnostic.py: exit=0
+{"candidate_unique_name_matches": 65, "verified_matches": 55, "matched_type_counts": {"\ud83d\udfe2 pretrained": 55}, "match_rule": "unique lowercase alphanumeric model basename; same open-weight C4 model, C1/C4 parameter ratio 0.8-1.25, complete scores and positive compute", "tokens_available": 39, "license_populated": 55, "year_counts": {"2021": 2, "2022": 2, "2023": 19, "2024": 32}, "temporal_holdout_pre_2024_to_2024": {"scale_only": {"test_n": 32, "mae": 8.688687530983037, "rmse": 11.021806655313068, "baseline_mae": 11.335937487878017, "coefficients": {"log10_C": 2.8441707688337123}, "intercept": -55.444523073016704}, "scale_plus_time": {"test_n": 32, "mae": 7.42808681257899, "rmse": 9.254190189247767, "baseline_mae": 11.335937487878017, "coefficients": {"log10_C": 2.8696569093720137, "years_since_2021": 1.972556138549972}, "intercept": -60.26916822559318}}, "all_matched_association": {"scale_coefficient_per_log10_FLOPs": 6.196483344860219, "non_scale_time_coefficient_per_year": 3.134577351284993}, "cohort_2023_to_2024": {"observed_score_change": 10.264139305685896, "model_scale_association": 7.034200689554516, "model_time_association": 3.207693776046584, "unexplained_difference": 0.022244840084796547}, "causal_status": "observational association only; date term absorbs unmeasured selection and technology"}
+
+q4/contribution_uncertainty.py: exit=0
+{"organizations": 18, "bootstraps": 600, "scale_interval": [3.194711116790151, 11.745535651702683], "time_interval": [1.0044777729462857, 8.11790096016807], "scale_share_interval": [0.41292548589024797, 0.9004842709497438]}
+
+q4/frontier_scenario.py: exit=0
+{"holdout_coverage": 0.65625, "passes_gate": false, "score_scenarios": [46.922902085086264, 47.7414683498119, 48.560034614537514], "projection_years_beyond_scored_release": 2.7789185489390826}
+
+q4/pretrained_frontier_backtest.py: exit=0
+{"train": 184, "test": 49, "constant": {"test_n": 49, "q90_train": 24.972426876804, "actual_fraction_at_or_below": 0.9387755102040817}, "size_only": {"features": ["log10_N"], "test_n": 49, "nominal_upper_quantile": 0.9, "actual_fraction_at_or_below": 0.8979591836734694, "pinball_loss": 0.8402550697826996, "mean_exceedance_when_exceeded": 4.476185751941765, "prediction_range": [8.39927772556529, 24.880895621799635]}, "size_time": {"features": ["log10_N", "t_years"], "test_n": 49, "nominal_upper_quantile": 0.9, "actual_fraction_at_or_below": 0.9183673469387755, "pinball_loss": 0.8096437811496254, "mean_exceedance_when_exceeded": 2.6918590695987135, "prediction_range": [10.041307183214197, 27.200604652762657]}}
+
+q4/frontier_revised.py: exit=0
+{"holdout_coverage": 0.9183673469387755, "coverage_95pct_interval": [0.803985816521109, 0.9773091193569283], "compute_to_size_2024_mae_dex": 0.5474750643797486, "N_range_B": [37.492851476140835, 47.146630666412236], "scenario_score_range": [27.019630255866318, 27.79307408385725], "years_beyond_latest_score": 2.54072553045859}
+
+q4/frontier_uncertainty.py: exit=0
+{"successful_repetitions": 160, "failed": 0, "central_scenario_range": [27.019630255866318, 27.79307408385725], "conditional_model_driver_range": [23.327954731408308, 45.828338763007814]}
+
+q4/frontier_dynamics.py: exit=0
+data end 2025-03-13 beta_C 6.196 beta_t 3.135 g_C 0.494 drift/yr scale 3.06 non-scale 3.13
+boot {'beta_C': [2.846477163562145, 11.39773625428265], 'beta_t': [0.6806592537959446, 7.976394755983397]} [0.35909911422846946, 0.563915255593207]
+[{'year': 2021, 'log10_q90_C': 22.520680001634396}, {'year': 2022, 'log10_q90_C': 23.613523856893284}, {'year': 2023, 'log10_q90_C': 23.715501945293283}, {'year': 2024, 'log10_q90_C': 24.518513939877888}, {'year': 2025, 'log10_q90_C': 24.53959998867275}]
+{'origin': '2023-06-30', 'target': '2023-12-30', 'train_models': 16, 'beta_C': 1.92, 'beta_t': 0.02, 'g_C': 0.41, 'F_origin': 13.69, 'predicted': 14.09, 'observed': 22.37, 'error': -8.28, 'persistence_error': -8.69}
+{'origin': '2023-06-30', 'target': '2024-06-30', 'train_models': 16, 'beta_C': 1.92, 'beta_t': 0.02, 'g_C': 0.41, 'F_origin': 13.69, 'predicted': 14.49, 'observed': 35.46, 'error': -20.97, 'persistence_error': -21.77}
+{'origin': '2023-12-31', 'target': '2024-06-30', 'train_models': 23, 'beta_C': 2.87, 'beta_t': 1.97, 'g_C': 0.6, 'F_origin': 22.37, 'predicted': 24.22, 'observed': 35.46, 'error': -11.24, 'persistence_error': -13.08}
+{'origin': '2023-12-31', 'target': '2024-12-31', 'train_models': 23, 'beta_C': 2.87, 'beta_t': 1.97, 'g_C': 0.6, 'F_origin': 22.37, 'predicted': 26.06, 'observed': 38.44, 'error': -12.38, 'persistence_error': -16.07}
+pretrained 12 2026-03-13 historical_compute_growth F0=38.44 central=44.64 [41.50, 49.57] Qwen/Qwen2.5-72B
+pretrained 12 2026-03-13 half_compute_growth F0=38.44 central=43.11 [40.53, 47.87] Qwen/Qwen2.5-72B
+pretrained 12 2026-03-13 no_compute_growth F0=38.44 central=41.58 [39.12, 46.42] Qwen/Qwen2.5-72B
+pretrained 24 2027-03-13 historical_compute_growth F0=38.44 central=50.84 [44.56, 60.69] Qwen/Qwen2.5-72B
+pretrained 24 2027-03-13 half_compute_growth F0=38.44 central=47.77 [42.62, 57.31] Qwen/Qwen2.5-72B
+pretrained 24 2027-03-13 no_compute_growth F0=38.44 central=44.71 [39.80, 54.39] Qwen/Qwen2.5-72B
+pretrained 30 2027-09-13 historical_compute_growth F0=38.44 central=53.93 [46.10, 66.26] Qwen/Qwen2.5-72B
+pretrained 30 2027-09-13 half_compute_growth F0=38.44 central=50.11 [43.66, 62.02] Qwen/Qwen2.5-72B
+pretrained 30 2027-09-13 no_compute_growth F0=38.44 central=46.28 [40.14, 58.38] Qwen/Qwen2.5-72B
+chat_or_finetuned 12 2026-03-13 historical_compute_growth F0=48.11 central=54.30 [51.17, 59.23] huihui-ai/Qwen2.5-72B-Instruct-abliterated
+chat_or_finetuned 12 2026-03-13 half_compute_growth F0=48.11 central=52.77 [50.19, 57.54] huihui-ai/Qwen2.5-72B-Instruct-abliterated
+chat_or_finetuned 12 2026-03-13 no_compute_growth F0=48.11 central=51.24 [48.79, 56.08] huihui-ai/Qwen2.5-72B-Instruct-abliterated
+chat_or_finetuned 24 2027-03-13 historical_compute_growth F0=48.11 central=60.50 [54.23, 70.36] huihui-ai/Qwen2.5-72B-Instruct-abliterated
+chat_or_finetuned 24 2027-03-13 half_compute_growth F0=48.11 central=57.44 [52.28, 66.97] huihui-ai/Qwen2.5-72B-Instruct-abliterated
+chat_or_finetuned 24 2027-03-13 no_compute_growth F0=48.11 central=54.38 [49.47, 64.06] huihui-ai/Qwen2.5-72B-Instruct-abliterated
+chat_or_finetuned 30 2027-09-13 historical_compute_growth F0=48.11 central=63.60 [55.76, 75.92] huihui-ai/Qwen2.5-72B-Instruct-abliterated
+chat_or_finetuned 30 2027-09-13 half_compute_growth F0=48.11 central=59.77 [53.33, 71.69] huihui-ai/Qwen2.5-72B-Instruct-abliterated
+chat_or_finetuned 30 2027-09-13 no_compute_growth F0=48.11 central=55.94 [49.81, 68.05] huihui-ai/Qwen2.5-72B-Instruct-abliterated
+
+reporting_figures.py: exit=0
+Saved six figures in D:\project_commercial\2026数学建模竞赛\F_算力资源配置\05_results\figures
+
+paper_figures_q1q3.py: exit=0
+figures written to D:\project_commercial\2026数学建模竞赛\F_算力资源配置\05_results\figures
+
+paper_figures_q2q4.py: exit=0
+figures written to D:\project_commercial\2026数学建模竞赛\F_算力资源配置\05_results\figures
+
+Completed 2026-09-25T15:37:15.319992+00:00

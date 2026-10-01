@@ -1,0 +1,34 @@
+{
+  "C8_files_attempted": 1958,
+  "C8_files_with_usable_task_results": 1958,
+  "C8_files_fully_parsed": 1954,
+  "C8_invalid_json_files": 4,
+  "C8_task_blocks_recovered_from_invalid_files": 4,
+  "C8_invalid_examples": [
+    {
+      "file": "DreadPoor_Winter_Dawn-8B-TIES\\results_2025-02-13T18-27-04.338360.json",
+      "error": "Unterminated string starting at: line 1453 column 22 (char 65388)"
+    },
+    {
+      "file": "FINGU-AI_Chocolatine-Fusion-14B\\results_2025-02-13T18-27-04.338360.json",
+      "error": "Unterminated string starting at: line 1162 column 22 (char 48159)"
+    },
+    {
+      "file": "Intel_neural-chat-7b-v3-3\\results_2025-02-13T18-27-04.338360.json",
+      "error": "Unterminated string starting at: line 1194 column 11 (char 49140)"
+    },
+    {
+      "file": "L-RAGE_3_PRYMMAL-ECE-7B-SLERP-V1\\results_2025-02-13T18-27-04.338360.json",
+      "error": "Expecting property name enclosed in double quotes: line 1090 column 4 (char 45805)"
+    }
+  ],
+  "unique_model_names": 1864,
+  "files_with_any_valid_BBH_subtask": 1958,
+  "median_BBH_subtasks_per_file": 24.0,
+  "C1_exact_name_join_rows": 1901,
+  "C1_joined_with_10plus_tasks": 1901,
+  "C1_BBH_vs_C8_subtask_mean_spearman": 0.9971342081968895,
+  "C1_BBH_vs_C8_subtask_mean_mae_pct": 21.279143242194248,
+  "metric_definition": "unweighted mean of available leaderboard_bbh_* acc_norm,none values times 100",
+  "scope": "descriptive task aggregation; no equivalence claim to leaderboard BBH protocol"
+}

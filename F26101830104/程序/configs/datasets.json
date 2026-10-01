@@ -1,0 +1,432 @@
+{
+  "status": "paths_registered_semantic_validation_pending",
+  "path_base": "02_data/raw",
+  "datasets": {
+    "A1": {
+      "paths": [
+        "real_attachments/A_data_value/slimpajama_quality_signal_sample.jsonl.xz"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A2": {
+      "paths": [
+        "real_attachments/A_data_value/slimpajama_quality_extended/arxiv_part-6777d8857c6e-000486.jsonl.xz"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A3": {
+      "paths": [
+        "real_attachments/A_data_value/slimpajama_quality_extended/github_part-6777d8857c6e-000275.jsonl.xz"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A4": {
+      "paths": [
+        "real_attachments/A_data_value/regmix_tables/train_mixture_1m.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A5": {
+      "paths": [
+        "real_attachments/A_data_value/regmix_tables/train_pile_loss_1m.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A6": {
+      "paths": [
+        "real_attachments/A_data_value/regmix_tables/test_mixture_1m.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A7": {
+      "paths": [
+        "real_attachments/A_data_value/regmix_tables/test_pile_loss_1m.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A8": {
+      "paths": [
+        "real_attachments/A_data_value/regmix_tables/test_mixture_60m.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A9": {
+      "paths": [
+        "real_attachments/A_data_value/regmix_tables/test_pile_loss_60m.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A10": {
+      "paths": [
+        "real_attachments/A_data_value/regmix_tables/test_mixture_1B.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A11": {
+      "paths": [
+        "real_attachments/A_data_value/regmix_tables/test_pile_loss_1B.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A12": {
+      "paths": [
+        "real_attachments/A_data_value/regmix_tables/est_mixture_10b.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A13": {
+      "paths": [
+        "real_attachments/A_data_value/regmix_tables/est_pile_loss_10b.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A14": {
+      "paths": [
+        "real_attachments/A_data_value/regmix_tables/est_mixture_70b.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A15": {
+      "paths": [
+        "real_attachments/A_data_value/regmix_tables/est_pile_loss_70b.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A16": {
+      "paths": [
+        "real_attachments/A_data_value/domain_mapping_guide.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A17": {
+      "paths": [
+        "real_attachments/A_data_value/regmix_domain_summary.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "A18": {
+      "paths": [
+        "real_attachments/A_data_value/regmix_domain_sample.jsonl.xz"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "B1": {
+      "paths": [
+        "real_attachments/B_scaling_laws/pythia_training_log_existing.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "B2": {
+      "paths": [
+        "real_attachments/B_scaling_laws/cerebras_training_log.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "B3": {
+      "paths": [
+        "real_attachments/B_scaling_laws/training_trajectories/pythia_0.070542B_trajectory.csv",
+        "real_attachments/B_scaling_laws/training_trajectories/pythia_0.162405B_trajectory.csv",
+        "real_attachments/B_scaling_laws/training_trajectories/pythia_0.409009B_trajectory.csv",
+        "real_attachments/B_scaling_laws/training_trajectories/pythia_1.040867B_trajectory.csv",
+        "real_attachments/B_scaling_laws/training_trajectories/pythia_1.416184B_trajectory.csv",
+        "real_attachments/B_scaling_laws/training_trajectories/pythia_11.965825B_trajectory.csv",
+        "real_attachments/B_scaling_laws/training_trajectories/pythia_2.782831B_trajectory.csv",
+        "real_attachments/B_scaling_laws/training_trajectories/pythia_6.86104B_trajectory.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "B4": {
+      "paths": [
+        "real_attachments/B_scaling_laws/scaling_baseline.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "B5": {
+      "paths": [
+        "real_attachments/B_scaling_laws/published_scaling_data.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "B6": {
+      "paths": [
+        "real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "B7": {
+      "paths": [
+        "real_attachments/B_scaling_laws/supplementary_NQ_experiment_expanded.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "B8": {
+      "paths": [
+        "real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "B9": {
+      "paths": [
+        "real_attachments/B_scaling_laws/supplementary_large_models.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "B10": {
+      "paths": [
+        "real_attachments/B_scaling_laws/supplementary_large_baseline.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "B11": {
+      "paths": [
+        "real_attachments/B_scaling_laws/open_model_family_metadata.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "B12": {
+      "paths": [
+        "real_attachments/B_scaling_laws/pythia_checkpoint_index.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "C1": {
+      "paths": [
+        "real_attachments/C_efficiency_evolution/leaderboard_cleaned.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "C2": {
+      "paths": [
+        "real_attachments/C_efficiency_evolution/leaderboard_enhanced.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "C3": {
+      "paths": [
+        "real_attachments/C_efficiency_evolution/leaderboard_extended_timeseries.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "C4": {
+      "paths": [
+        "real_attachments/C_efficiency_evolution/epoch_all_ai_models.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "C5": {
+      "paths": [
+        "real_attachments/C_efficiency_evolution/loss_benchmark_bridge.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "C6": {
+      "paths": [
+        "real_attachments/C_efficiency_evolution/loss_benchmark_bridge_expanded.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "C7": {
+      "paths": [
+        "real_attachments/C_efficiency_evolution/model_architecture_metadata.csv"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "C8": {
+      "paths": [],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "directory": "real_attachments/C_efficiency_evolution/detailed_results",
+      "pattern": "*.json",
+      "minimum_files": 1
+    },
+    "C9": {
+      "paths": [
+        "real_attachments/C_efficiency_evolution/data/train-00000-of-00001.parquet"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    },
+    "C10": {
+      "paths": [
+        "real_attachments/C_efficiency_evolution/pythia_1.4b_eval_details/README.md",
+        "real_attachments/C_efficiency_evolution/pythia_12b_eval_details/README.md",
+        "real_attachments/C_efficiency_evolution/pythia_160m_eval_details/README.md",
+        "real_attachments/C_efficiency_evolution/pythia_2.8b_eval_details/README.md",
+        "real_attachments/C_efficiency_evolution/pythia_410m_eval_details/README.md",
+        "real_attachments/C_efficiency_evolution/pythia_6.9b_eval_details/README.md",
+        "real_attachments/C_efficiency_evolution/pythia_eval_details/README.md"
+      ],
+      "source_type": "unverified",
+      "schema_verified": false,
+      "mapping_basis": "data_description_pages_1_to_4_plus_source_manifest"
+    }
+  },
+  "requirements": {
+    "q1": {
+      "all_of": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A14",
+        "A15"
+      ],
+      "manual_requirements": [
+        "核对22项指标方向和尺度",
+        "A16跨体系映射依据",
+        "A1/A2/A3全部记录与重叠情况",
+        "A6-A11检验及A12-A15外推配对"
+      ]
+    },
+    "q2": {
+      "all_of": [
+        "B1",
+        "B4",
+        "B5",
+        "B9",
+        "B10"
+      ],
+      "choice_groups": [
+        [
+          [
+            "B2"
+          ],
+          [
+            "B3"
+          ]
+        ],
+        [
+          [
+            "B6"
+          ],
+          [
+            "B7",
+            "B8"
+          ]
+        ]
+      ],
+      "manual_requirements": [
+        "继承Q1真实汇总输出",
+        "Loss可比性核验",
+        "B6-B8半合成机制与实际选用范围按数据说明确认"
+      ]
+    },
+    "q3": {
+      "all_of": [
+        "C7"
+      ],
+      "manual_requirements": [
+        "Q1/Q2模型通过相应验证",
+        "上下文可行值确认",
+        "完整成本约束与敏感性"
+      ]
+    },
+    "q4": {
+      "all_of": [
+        "C3",
+        "C4",
+        "C8"
+      ],
+      "choice_groups": [
+        [
+          [
+            "C1"
+          ],
+          [
+            "C2"
+          ]
+        ]
+      ],
+      "manual_requirements": [
+        "C5/C6或可核验文献桥接",
+        "逐任务聚合",
+        "模型类型/许可证/日期口径",
+        "动态模型或有识别依据的因果模型"
+      ]
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "model_type": "classical_baseline",
+  "params": [
+    1.6897975629219435,
+    0.35398032066811846,
+    1.2403055835428554,
+    0.33997658189411734,
+    0.27987812854568583
+  ],
+  "Nref": 1000000000.0,
+  "Dref": 1000000000.0,
+  "runs": [
+    {
+      "success": true,
+      "cost": 1.2619129365782656e-05,
+      "nfev": 21
+    },
+    {
+      "success": true,
+      "cost": 1.2619129365784299e-05,
+      "nfev": 25
+    },
+    {
+      "success": true,
+      "cost": 1.2619129365784495e-05,
+      "nfev": 28
+    },
+    {
+      "success": true,
+      "cost": 1.261912936578432e-05,
+      "nfev": 33
+    },
+    {
+      "success": true,
+      "cost": 1.2619129365784055e-05,
+      "nfev": 16
+    },
+    {
+      "success": true,
+      "cost": 1.2619129365783631e-05,
+      "nfev": 17
+    },
+    {
+      "success": true,
+      "cost": 1.2619129365782757e-05,
+      "nfev": 31
+    },
+    {
+      "success": true,
+      "cost": 1.2619129365783598e-05,
+      "nfev": 18
+    },
+    {
+      "success": true,
+      "cost": 1.261912936578464e-05,
+      "nfev": 21
+    },
+    {
+      "success": true,
+      "cost": 1.2619129365783487e-05,
+      "nfev": 25
+    },
+    {
+      "success": true,
+      "cost": 1.2619129365784516e-05,
+      "nfev": 24
+    },
+    {
+      "success": true,
+      "cost": 1.2619129365783985e-05,
+      "nfev": 23
+    },
+    {
+      "success": true,
+      "cost": 1.2619129365785434e-05,
+      "nfev": 19
+    },
+    {
+      "success": true,
+      "cost": 1.2619129365784656e-05,
+      "nfev": 10
+    },
+    {
+      "success": true,
+      "cost": 1.2619129365785386e-05,
+      "nfev": 17
+    },
+    {
+      "success": true,
+      "cost": 1.261912936578366e-05,
+      "nfev": 22
+    }
+  ],
+  "training_rmse": 0.0001464960899258951,
+  "jacobian_rank": 5,
+  "jacobian_condition": 33.83473206512886,
+  "at_parameter_bound": false,
+  "evidence_status": "fit_only_requires_external_validation",
+  "limits": "No quality or mixture effects; no uncertainty or causal identification.",
+  "parameter_order": [
+    "E",
+    "a",
+    "b",
+    "alpha",
+    "beta"
+  ],
+  "original_units": {
+    "N": "parameters",
+    "D": "tokens",
+    "L": "validation cross-entropy"
+  },
+  "training_file": "02_data\\raw\\real_attachments\\B_scaling_laws\\pythia_training_log_existing.csv",
+  "training_n": 1176,
+  "training_checkpoint_rows": 1176,
+  "training_model_sizes": 8,
+  "training_ranges": {
+    "N_B": [
+      0.070542,
+      11.965825
+    ],
+    "D_B": [
+      0.134,
+      299.893
+    ]
+  },
+  "limitations": [
+    "B2 is semi-synthetic and not independent real observation",
+    "B4/B5 losses may use different validation corpora/tokenizers",
+    "no Q or p effect in this baseline"
+  ]
+}

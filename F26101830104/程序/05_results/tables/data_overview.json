@@ -1,0 +1,391 @@
+{
+ "A1": [
+  {
+   "path": "real_attachments/A_data_value/slimpajama_quality_signal_sample.jsonl.xz",
+   "kind": "jsonl",
+   "rows": 51230,
+   "cols": 27
+  }
+ ],
+ "A2": [
+  {
+   "path": "real_attachments/A_data_value/slimpajama_quality_extended/arxiv_part-6777d8857c6e-000486.jsonl.xz",
+   "kind": "jsonl",
+   "rows": 17523,
+   "cols": 24
+  }
+ ],
+ "A3": [
+  {
+   "path": "real_attachments/A_data_value/slimpajama_quality_extended/github_part-6777d8857c6e-000275.jsonl.xz",
+   "kind": "jsonl",
+   "rows": 203752,
+   "cols": 24
+  }
+ ],
+ "A4": [
+  {
+   "path": "real_attachments/A_data_value/regmix_tables/train_mixture_1m.csv",
+   "kind": "csv",
+   "rows": 512,
+   "cols": 18
+  }
+ ],
+ "A5": [
+  {
+   "path": "real_attachments/A_data_value/regmix_tables/train_pile_loss_1m.csv",
+   "kind": "csv",
+   "rows": 512,
+   "cols": 14
+  }
+ ],
+ "A6": [
+  {
+   "path": "real_attachments/A_data_value/regmix_tables/test_mixture_1m.csv",
+   "kind": "csv",
+   "rows": 256,
+   "cols": 18
+  }
+ ],
+ "A7": [
+  {
+   "path": "real_attachments/A_data_value/regmix_tables/test_pile_loss_1m.csv",
+   "kind": "csv",
+   "rows": 256,
+   "cols": 14
+  }
+ ],
+ "A8": [
+  {
+   "path": "real_attachments/A_data_value/regmix_tables/test_mixture_60m.csv",
+   "kind": "csv",
+   "rows": 256,
+   "cols": 18
+  }
+ ],
+ "A9": [
+  {
+   "path": "real_attachments/A_data_value/regmix_tables/test_pile_loss_60m.csv",
+   "kind": "csv",
+   "rows": 256,
+   "cols": 14
+  }
+ ],
+ "A10": [
+  {
+   "path": "real_attachments/A_data_value/regmix_tables/test_mixture_1B.csv",
+   "kind": "csv",
+   "rows": 64,
+   "cols": 18
+  }
+ ],
+ "A11": [
+  {
+   "path": "real_attachments/A_data_value/regmix_tables/test_pile_loss_1B.csv",
+   "kind": "csv",
+   "rows": 64,
+   "cols": 14
+  }
+ ],
+ "A12": [
+  {
+   "path": "real_attachments/A_data_value/regmix_tables/est_mixture_10b.csv",
+   "kind": "csv",
+   "rows": 63,
+   "cols": 18
+  }
+ ],
+ "A13": [
+  {
+   "path": "real_attachments/A_data_value/regmix_tables/est_pile_loss_10b.csv",
+   "kind": "csv",
+   "rows": 63,
+   "cols": 14
+  }
+ ],
+ "A14": [
+  {
+   "path": "real_attachments/A_data_value/regmix_tables/est_mixture_70b.csv",
+   "kind": "csv",
+   "rows": 63,
+   "cols": 18
+  }
+ ],
+ "A15": [
+  {
+   "path": "real_attachments/A_data_value/regmix_tables/est_pile_loss_70b.csv",
+   "kind": "csv",
+   "rows": 63,
+   "cols": 14
+  }
+ ],
+ "A16": [
+  {
+   "path": "real_attachments/A_data_value/domain_mapping_guide.csv",
+   "kind": "csv",
+   "rows": 17,
+   "cols": 4
+  }
+ ],
+ "A17": [
+  {
+   "path": "real_attachments/A_data_value/regmix_domain_summary.csv",
+   "kind": "csv",
+   "rows": 17,
+   "cols": 5
+  }
+ ],
+ "A18": [
+  {
+   "path": "real_attachments/A_data_value/regmix_domain_sample.jsonl.xz",
+   "kind": "jsonl",
+   "rows": 138034,
+   "cols": 3
+  }
+ ],
+ "B1": [
+  {
+   "path": "real_attachments/B_scaling_laws/pythia_training_log_existing.csv",
+   "kind": "csv",
+   "rows": 1176,
+   "cols": 15
+  }
+ ],
+ "B2": [
+  {
+   "path": "real_attachments/B_scaling_laws/cerebras_training_log.csv",
+   "kind": "csv",
+   "rows": 1029,
+   "cols": 15
+  }
+ ],
+ "B3": [
+  {
+   "path": "real_attachments/B_scaling_laws/training_trajectories/pythia_0.070542B_trajectory.csv",
+   "kind": "csv",
+   "rows": 500,
+   "cols": 5
+  },
+  {
+   "path": "real_attachments/B_scaling_laws/training_trajectories/pythia_0.162405B_trajectory.csv",
+   "kind": "csv",
+   "rows": 500,
+   "cols": 5
+  },
+  {
+   "path": "real_attachments/B_scaling_laws/training_trajectories/pythia_0.409009B_trajectory.csv",
+   "kind": "csv",
+   "rows": 500,
+   "cols": 5
+  },
+  {
+   "path": "real_attachments/B_scaling_laws/training_trajectories/pythia_1.040867B_trajectory.csv",
+   "kind": "csv",
+   "rows": 500,
+   "cols": 5
+  },
+  {
+   "path": "real_attachments/B_scaling_laws/training_trajectories/pythia_1.416184B_trajectory.csv",
+   "kind": "csv",
+   "rows": 500,
+   "cols": 5
+  },
+  {
+   "path": "real_attachments/B_scaling_laws/training_trajectories/pythia_11.965825B_trajectory.csv",
+   "kind": "csv",
+   "rows": 500,
+   "cols": 5
+  },
+  {
+   "path": "real_attachments/B_scaling_laws/training_trajectories/pythia_2.782831B_trajectory.csv",
+   "kind": "csv",
+   "rows": 500,
+   "cols": 5
+  },
+  {
+   "path": "real_attachments/B_scaling_laws/training_trajectories/pythia_6.86104B_trajectory.csv",
+   "kind": "csv",
+   "rows": 500,
+   "cols": 5
+  }
+ ],
+ "B4": [
+  {
+   "path": "real_attachments/B_scaling_laws/scaling_baseline.csv",
+   "kind": "csv",
+   "rows": 57,
+   "cols": 5
+  }
+ ],
+ "B5": [
+  {
+   "path": "real_attachments/B_scaling_laws/published_scaling_data.csv",
+   "kind": "csv",
+   "rows": 44,
+   "cols": 6
+  }
+ ],
+ "B6": [
+  {
+   "path": "real_attachments/B_scaling_laws/supplementary_NQ_experiment.csv",
+   "kind": "csv",
+   "rows": 360,
+   "cols": 5
+  }
+ ],
+ "B7": [
+  {
+   "path": "real_attachments/B_scaling_laws/supplementary_NQ_experiment_expanded.csv",
+   "kind": "csv",
+   "rows": 450,
+   "cols": 5
+  }
+ ],
+ "B8": [
+  {
+   "path": "real_attachments/B_scaling_laws/supplementary_NQ_experiment_large.csv",
+   "kind": "csv",
+   "rows": 1704,
+   "cols": 6
+  }
+ ],
+ "B9": [
+  {
+   "path": "real_attachments/B_scaling_laws/supplementary_large_models.csv",
+   "kind": "csv",
+   "rows": 132,
+   "cols": 8
+  }
+ ],
+ "B10": [
+  {
+   "path": "real_attachments/B_scaling_laws/supplementary_large_baseline.csv",
+   "kind": "csv",
+   "rows": 128,
+   "cols": 5
+  }
+ ],
+ "B11": [
+  {
+   "path": "real_attachments/B_scaling_laws/open_model_family_metadata.csv",
+   "kind": "csv",
+   "rows": 18,
+   "cols": 8
+  }
+ ],
+ "B12": [
+  {
+   "path": "real_attachments/B_scaling_laws/pythia_checkpoint_index.csv",
+   "kind": "csv",
+   "rows": 1386,
+   "cols": 5
+  }
+ ],
+ "C1": [
+  {
+   "path": "real_attachments/C_efficiency_evolution/leaderboard_cleaned.csv",
+   "kind": "csv",
+   "rows": 4576,
+   "cols": 12
+  }
+ ],
+ "C2": [
+  {
+   "path": "real_attachments/C_efficiency_evolution/leaderboard_enhanced.csv",
+   "kind": "csv",
+   "rows": 4576,
+   "cols": 15
+  }
+ ],
+ "C3": [
+  {
+   "path": "real_attachments/C_efficiency_evolution/leaderboard_extended_timeseries.csv",
+   "kind": "csv",
+   "rows": 4599,
+   "cols": 11
+  }
+ ],
+ "C4": [
+  {
+   "path": "real_attachments/C_efficiency_evolution/epoch_all_ai_models.csv",
+   "kind": "csv",
+   "rows": 3523,
+   "cols": 57
+  }
+ ],
+ "C5": [
+  {
+   "path": "real_attachments/C_efficiency_evolution/loss_benchmark_bridge.csv",
+   "kind": "csv",
+   "rows": 43,
+   "cols": 13
+  }
+ ],
+ "C6": [
+  {
+   "path": "real_attachments/C_efficiency_evolution/loss_benchmark_bridge_expanded.csv",
+   "kind": "csv",
+   "rows": 75,
+   "cols": 13
+  }
+ ],
+ "C7": [
+  {
+   "path": "real_attachments/C_efficiency_evolution/model_architecture_metadata.csv",
+   "kind": "csv",
+   "rows": 45,
+   "cols": 7
+  }
+ ],
+ "C8": [
+  {
+   "path": "real_attachments/C_efficiency_evolution/detailed_results",
+   "kind": "dir",
+   "files": 1958
+  }
+ ],
+ "C9": [
+  {
+   "path": "real_attachments/C_efficiency_evolution/data/train-00000-of-00001.parquet",
+   "kind": "parquet",
+   "bytes": 1109997
+  }
+ ],
+ "C10": [
+  {
+   "path": "real_attachments/C_efficiency_evolution/pythia_1.4b_eval_details/README.md",
+   "kind": "md",
+   "bytes": 63450
+  },
+  {
+   "path": "real_attachments/C_efficiency_evolution/pythia_12b_eval_details/README.md",
+   "kind": "md",
+   "bytes": 72327
+  },
+  {
+   "path": "real_attachments/C_efficiency_evolution/pythia_160m_eval_details/README.md",
+   "kind": "md",
+   "bytes": 72028
+  },
+  {
+   "path": "real_attachments/C_efficiency_evolution/pythia_2.8b_eval_details/README.md",
+   "kind": "md",
+   "bytes": 72145
+  },
+  {
+   "path": "real_attachments/C_efficiency_evolution/pythia_410m_eval_details/README.md",
+   "kind": "md",
+   "bytes": 72065
+  },
+  {
+   "path": "real_attachments/C_efficiency_evolution/pythia_6.9b_eval_details/README.md",
+   "kind": "md",
+   "bytes": 72470
+  },
+  {
+   "path": "real_attachments/C_efficiency_evolution/pythia_eval_details/README.md",
+   "kind": "md",
+   "bytes": 63185
+  }
+ ]
+}

@@ -1,0 +1,311 @@
+{
+  "groups": [
+    {
+      "group": "高分样本",
+      "n": 6,
+      "consistent": 5,
+      "inconsistent_samples": [
+        3
+      ]
+    },
+    {
+      "group": "低分样本",
+      "n": 6,
+      "consistent": 6,
+      "inconsistent_samples": []
+    },
+    {
+      "group": "教育价值与无广告冲突",
+      "n": 5,
+      "consistent": 2,
+      "inconsistent_samples": [
+        14,
+        16,
+        17
+      ]
+    },
+    {
+      "group": "推理性与可读性冲突",
+      "n": 5,
+      "consistent": 1,
+      "inconsistent_samples": [
+        18,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "group": "流畅度与整洁度冲突",
+      "n": 5,
+      "consistent": 3,
+      "inconsistent_samples": [
+        23,
+        24
+      ]
+    }
+  ],
+  "total": 27,
+  "consistent_total": 17,
+  "arbitration_vs_readers": {
+    "v1_reliability": {
+      "toward_reader": 0,
+      "against_reader": 9,
+      "moved_while_consistent": 6,
+      "unchanged": 0,
+      "unchanged_while_consistent": 0,
+      "mean_abs_delta_when_consistent": 0.01994776803644686
+    },
+    "information": {
+      "toward_reader": 6,
+      "against_reader": 0,
+      "moved_while_consistent": 4,
+      "unchanged": 3,
+      "unchanged_while_consistent": 2,
+      "mean_abs_delta_when_consistent": 0.0035110645469525656
+    }
+  },
+  "moves": [
+    {
+      "sample": 13,
+      "group": "教育价值与无广告冲突",
+      "rule": "v1_reliability",
+      "delta": 0.03089104960955502,
+      "wanted": 0,
+      "verdict": "moved_while_consistent"
+    },
+    {
+      "sample": 13,
+      "group": "教育价值与无广告冲突",
+      "rule": "information",
+      "delta": 1.1102230246251565e-16,
+      "wanted": 0,
+      "verdict": "unchanged"
+    },
+    {
+      "sample": 14,
+      "group": "教育价值与无广告冲突",
+      "rule": "v1_reliability",
+      "delta": 0.03390757932656885,
+      "wanted": -1,
+      "verdict": "against_reader"
+    },
+    {
+      "sample": 14,
+      "group": "教育价值与无广告冲突",
+      "rule": "information",
+      "delta": 1.1102230246251565e-16,
+      "wanted": -1,
+      "verdict": "unchanged"
+    },
+    {
+      "sample": 15,
+      "group": "教育价值与无广告冲突",
+      "rule": "v1_reliability",
+      "delta": 0.03297097004117189,
+      "wanted": 0,
+      "verdict": "moved_while_consistent"
+    },
+    {
+      "sample": 15,
+      "group": "教育价值与无广告冲突",
+      "rule": "information",
+      "delta": 1.1102230246251565e-16,
+      "wanted": 0,
+      "verdict": "unchanged"
+    },
+    {
+      "sample": 16,
+      "group": "教育价值与无广告冲突",
+      "rule": "v1_reliability",
+      "delta": 0.02992248321530777,
+      "wanted": -1,
+      "verdict": "against_reader"
+    },
+    {
+      "sample": 16,
+      "group": "教育价值与无广告冲突",
+      "rule": "information",
+      "delta": 2.220446049250313e-16,
+      "wanted": -1,
+      "verdict": "unchanged"
+    },
+    {
+      "sample": 17,
+      "group": "教育价值与无广告冲突",
+      "rule": "v1_reliability",
+      "delta": 0.02928936557527695,
+      "wanted": -1,
+      "verdict": "against_reader"
+    },
+    {
+      "sample": 17,
+      "group": "教育价值与无广告冲突",
+      "rule": "information",
+      "delta": 1.1102230246251565e-16,
+      "wanted": -1,
+      "verdict": "unchanged"
+    },
+    {
+      "sample": 18,
+      "group": "推理性与可读性冲突",
+      "rule": "v1_reliability",
+      "delta": -0.021360282288287236,
+      "wanted": 1,
+      "verdict": "against_reader"
+    },
+    {
+      "sample": 18,
+      "group": "推理性与可读性冲突",
+      "rule": "information",
+      "delta": 0.013011306485384289,
+      "wanted": 1,
+      "verdict": "toward_reader"
+    },
+    {
+      "sample": 19,
+      "group": "推理性与可读性冲突",
+      "rule": "v1_reliability",
+      "delta": -0.022475424706030478,
+      "wanted": 0,
+      "verdict": "moved_while_consistent"
+    },
+    {
+      "sample": 19,
+      "group": "推理性与可读性冲突",
+      "rule": "information",
+      "delta": 0.013690579332825248,
+      "wanted": 0,
+      "verdict": "moved_while_consistent"
+    },
+    {
+      "sample": 20,
+      "group": "推理性与可读性冲突",
+      "rule": "v1_reliability",
+      "delta": -0.02120549019311846,
+      "wanted": 1,
+      "verdict": "against_reader"
+    },
+    {
+      "sample": 20,
+      "group": "推理性与可读性冲突",
+      "rule": "information",
+      "delta": 0.0129170171232601,
+      "wanted": 1,
+      "verdict": "toward_reader"
+    },
+    {
+      "sample": 21,
+      "group": "推理性与可读性冲突",
+      "rule": "v1_reliability",
+      "delta": -0.022289596193240002,
+      "wanted": 1,
+      "verdict": "against_reader"
+    },
+    {
+      "sample": 21,
+      "group": "推理性与可读性冲突",
+      "rule": "information",
+      "delta": 0.013577384586566432,
+      "wanted": 1,
+      "verdict": "toward_reader"
+    },
+    {
+      "sample": 22,
+      "group": "推理性与可读性冲突",
+      "rule": "v1_reliability",
+      "delta": -0.03383237307210574,
+      "wanted": 1,
+      "verdict": "against_reader"
+    },
+    {
+      "sample": 22,
+      "group": "推理性与可读性冲突",
+      "rule": "information",
+      "delta": 0.015762655435746065,
+      "wanted": 1,
+      "verdict": "toward_reader"
+    },
+    {
+      "sample": 23,
+      "group": "流畅度与整洁度冲突",
+      "rule": "v1_reliability",
+      "delta": -0.029956783308242918,
+      "wanted": 1,
+      "verdict": "against_reader"
+    },
+    {
+      "sample": 23,
+      "group": "流畅度与整洁度冲突",
+      "rule": "information",
+      "delta": 0.013608515044783998,
+      "wanted": 1,
+      "verdict": "toward_reader"
+    },
+    {
+      "sample": 24,
+      "group": "流畅度与整洁度冲突",
+      "rule": "v1_reliability",
+      "delta": -0.010245604945515963,
+      "wanted": 1,
+      "verdict": "against_reader"
+    },
+    {
+      "sample": 24,
+      "group": "流畅度与整洁度冲突",
+      "rule": "information",
+      "delta": 0.0022660122667903515,
+      "wanted": 1,
+      "verdict": "toward_reader"
+    },
+    {
+      "sample": 25,
+      "group": "流畅度与整洁度冲突",
+      "rule": "v1_reliability",
+      "delta": -0.011904992047205631,
+      "wanted": 0,
+      "verdict": "moved_while_consistent"
+    },
+    {
+      "sample": 25,
+      "group": "流畅度与整洁度冲突",
+      "rule": "information",
+      "delta": 0.0026330175873915396,
+      "wanted": 0,
+      "verdict": "moved_while_consistent"
+    },
+    {
+      "sample": 26,
+      "group": "流畅度与整洁度冲突",
+      "rule": "v1_reliability",
+      "delta": -0.011648360022676774,
+      "wanted": 0,
+      "verdict": "moved_while_consistent"
+    },
+    {
+      "sample": 26,
+      "group": "流畅度与整洁度冲突",
+      "rule": "information",
+      "delta": 0.0025762584873945116,
+      "wanted": 0,
+      "verdict": "moved_while_consistent"
+    },
+    {
+      "sample": 27,
+      "group": "流畅度与整洁度冲突",
+      "rule": "v1_reliability",
+      "delta": -0.009795811792041365,
+      "wanted": 0,
+      "verdict": "moved_while_consistent"
+    },
+    {
+      "sample": 27,
+      "group": "流畅度与整洁度冲突",
+      "rule": "information",
+      "delta": 0.002166531874103872,
+      "wanted": 0,
+      "verdict": "moved_while_consistent"
+    }
+  ],
+  "note": "readers judged the equal-weight Q; direction inferred from their stated reasons; the information rule uses no manual labels, so this is an out-of-sample check"
+}

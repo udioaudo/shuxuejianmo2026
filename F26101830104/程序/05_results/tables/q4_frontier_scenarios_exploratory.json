@@ -1,0 +1,57 @@
+{
+  "target_date": "2027-09-23",
+  "as_of": "2026-09-23",
+  "horizon_months": 12,
+  "ability_definition": "mean of six C1 tasks for matched open-weight pretrained models",
+  "frontier_proxy": "conditional 90th percentile, not theoretical maximum",
+  "training_release_year_range": [
+    2021,
+    2024
+  ],
+  "evaluation_score_submission_end": "2025-03-13",
+  "C4_compute_reference": {
+    "2024": {
+      "n": 131,
+      "q90_compute": 3.3e+24
+    },
+    "2025": {
+      "n": 87,
+      "q90_compute": 4.552800000000002e+24
+    }
+  },
+  "log10_compute_growth_2024_to_2025": 0.1397646327223813,
+  "temporal_holdout": {
+    "fit_release_year_max": 2023,
+    "test_release_year": 2024,
+    "test_n": 32,
+    "coverage_at_nominal_90pct": 0.65625,
+    "pinball_loss": 1.9198666452869362,
+    "passes_minimum_70pct_coverage_gate": false
+  },
+  "projection_years_beyond_latest_scored_release": 2.7789185489390826,
+  "scenarios": [
+    {
+      "scenario": "flat_compute",
+      "assumed_q90_compute_FLOPs": 4.55280000000002e+24,
+      "raw_upper_quantile_prediction": 46.922902085086264,
+      "bounded_0_100_score": 46.922902085086264,
+      "formal_forecast_validated": false
+    },
+    {
+      "scenario": "half_2024_25_log_growth",
+      "assumed_q90_compute_FLOPs": 6.011822278832491e+24,
+      "raw_upper_quantile_prediction": 47.7414683498119,
+      "bounded_0_100_score": 47.7414683498119,
+      "formal_forecast_validated": false
+    },
+    {
+      "scenario": "same_2024_25_log_growth",
+      "assumed_q90_compute_FLOPs": 7.93841308914651e+24,
+      "raw_upper_quantile_prediction": 48.560034614537514,
+      "bounded_0_100_score": 48.560034614537514,
+      "formal_forecast_validated": false
+    }
+  ],
+  "uncertainty_status": "No calibrated 2027 prediction interval: 2024 holdout and Loss bridge do not validate long-horizon transfer.",
+  "not_a_causal_or_verified_future_prediction": true
+}

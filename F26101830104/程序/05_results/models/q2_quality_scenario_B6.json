@@ -1,0 +1,259 @@
+{
+  "formula": "L = L_classical_B1(N,D) + c (N/1e9)^-theta_N (D/1e9)^-theta_D (1-Q)^kappa",
+  "main_form": "M2_N_D_decay",
+  "c": 0.42878495238413405,
+  "kappa": 0.9922237525046859,
+  "gamma": 0.9922237525046859,
+  "theta_N": 0.16175746534949056,
+  "theta_D": 0.03964613425548692,
+  "Nref": 1000000000.0,
+  "Dref": 1000000000.0,
+  "bootstrap_95ci_cells": {
+    "c": [
+      0.38924863181842134,
+      0.47023690332931695
+    ],
+    "kappa": [
+      0.9306935167100073,
+      1.0736248605105148
+    ],
+    "theta_N": [
+      0.14761719120703753,
+      0.1763304547451987
+    ],
+    "theta_D": [
+      0.020098044034310883,
+      0.05847114854952121
+    ]
+  },
+  "bootstrap_draws": 500,
+  "reference_Q_at_classic_baseline": 1,
+  "input_model": "05_results/models/q2_classical_B1.json",
+  "model_comparison_B6": {
+    "M0_scale_free": {
+      "params": {
+        "theta_N": 0.0,
+        "theta_D": 0.0,
+        "c": 0.36217498858796077,
+        "kappa": 0.9907347887127617
+      },
+      "k": 2,
+      "rss": 2.083099123305427,
+      "aic": -1850.8090220610957,
+      "bic": -1843.0368139981954,
+      "additive": true,
+      "B6": {
+        "n": 360,
+        "mae": 0.06004701276146943,
+        "rmse": 0.07606830124057054
+      },
+      "B7_new_only": {
+        "n": 90,
+        "mae": 0.04464555217399502,
+        "rmse": 0.059515283676605
+      },
+      "cell_slope_MAE": 0.09218172383039869
+    },
+    "M1_N_decay": {
+      "params": {
+        "theta_N": 0.16207291222028158,
+        "theta_D": 0.0,
+        "c": 0.3568073553688393,
+        "kappa": 0.9915433681018879
+      },
+      "k": 3,
+      "rss": 0.9661173886090385,
+      "aic": -2125.4066267892804,
+      "bic": -2113.74831469493,
+      "additive": true,
+      "B6": {
+        "n": 360,
+        "mae": 0.040501565600461725,
+        "rmse": 0.05180404822794146
+      },
+      "B7_new_only": {
+        "n": 90,
+        "mae": 0.0323950296981198,
+        "rmse": 0.04212705593607993
+      },
+      "cell_slope_MAE": 0.039242035668077595
+    },
+    "M2_N_D_decay": {
+      "params": {
+        "theta_N": 0.16175746534949056,
+        "theta_D": 0.03964613425548692,
+        "c": 0.42878495238413405,
+        "kappa": 0.9922237525046859
+      },
+      "k": 4,
+      "rss": 0.9130611036165255,
+      "aic": -2143.740342117248,
+      "bic": -2128.1959259914474,
+      "additive": true,
+      "B6": {
+        "n": 360,
+        "mae": 0.039390019873547295,
+        "rmse": 0.05036150159972633
+      },
+      "B7_new_only": {
+        "n": 90,
+        "mae": 0.032177730088178765,
+        "rmse": 0.04116749717156589
+      },
+      "cell_slope_MAE": 0.0330514439373953
+    },
+    "X1_multiplicative": {
+      "params": {
+        "theta_N": 0.0,
+        "theta_D": 0.0,
+        "c": 0.15004240150680934,
+        "kappa": 0.9916365405270906
+      },
+      "k": 2,
+      "rss": 1.4115077979114687,
+      "aic": -1990.9203937511113,
+      "bic": -1983.148185688211,
+      "additive": false,
+      "B6": {
+        "n": 360,
+        "mae": 0.04981364695397781,
+        "rmse": 0.06261673094468062
+      },
+      "B7_new_only": {
+        "n": 90,
+        "mae": 0.03831234137640347,
+        "rmse": 0.0498276496423603
+      }
+    },
+    "X2_multiplicative_N_decay": {
+      "params": {
+        "theta_N": 0.10316123193626978,
+        "theta_D": 0.0,
+        "c": 0.14522209463308436,
+        "kappa": 0.9919383104874171
+      },
+      "k": 3,
+      "rss": 0.930180227762857,
+      "aic": -2139.053141916153,
+      "bic": -2127.3948298218024,
+      "additive": false,
+      "B6": {
+        "n": 360,
+        "mae": 0.03981986101376062,
+        "rmse": 0.0508314269523091
+      },
+      "B7_new_only": {
+        "n": 90,
+        "mae": 0.03227486221683752,
+        "rmse": 0.041062507608409266
+      }
+    }
+  },
+  "likelihood_ratio_tests": [
+    {
+      "restricted": "M0_scale_free",
+      "full": "M1_N_decay",
+      "LR": 276.5976047281846,
+      "df": 1,
+      "p_value": 4.140501507959983e-62
+    },
+    {
+      "restricted": "M1_N_decay",
+      "full": "M2_N_D_decay",
+      "LR": 20.333715327967855,
+      "df": 1,
+      "p_value": 6.5044297858722846e-06
+    },
+    {
+      "restricted": "M0_scale_free",
+      "full": "M2_N_D_decay",
+      "LR": 296.9313200561525,
+      "df": 2,
+      "p_value": 3.3279983146272176e-65
+    }
+  ],
+  "selection_rule": "lowest BIC among nested additive forms M0-M2; multiplicative forms reported only",
+  "within_cell_slopes_B6": [
+    {
+      "N_B": 0.07,
+      "mean_slope": -0.5460510172143973,
+      "cells": 5
+    },
+    {
+      "N_B": 0.16,
+      "mean_slope": -0.48596118935837235,
+      "cells": 5
+    },
+    {
+      "N_B": 0.41,
+      "mean_slope": -0.423580907668232,
+      "cells": 5
+    },
+    {
+      "N_B": 0.7,
+      "mean_slope": -0.37370015649452254,
+      "cells": 5
+    },
+    {
+      "N_B": 1.0,
+      "mean_slope": -0.33755805946791795,
+      "cells": 5
+    },
+    {
+      "N_B": 2.8,
+      "mean_slope": -0.3207521126760569,
+      "cells": 5
+    },
+    {
+      "N_B": 4.0,
+      "mean_slope": -0.27614553990610324,
+      "cells": 5
+    },
+    {
+      "N_B": 6.9,
+      "mean_slope": -0.26302597809076705,
+      "cells": 5
+    },
+    {
+      "N_B": 11.97,
+      "mean_slope": -0.23345195618153433,
+      "cells": 5
+    }
+  ],
+  "B8_diagnosis": {
+    "status": "Q<1 rows unusable for the quality term",
+    "rows": 1704,
+    "rows_Q_eq_1": 138,
+    "Q_eq_1_vs_classical": {
+      "n": 138,
+      "mae": 0.028895813059597566,
+      "rmse": 0.0355024038523145
+    },
+    "Q_lt_1_rows_with_loss_below_E": 1095,
+    "Q_lt_1_rows": 1566,
+    "min_loss_Q_lt_1": 0.5,
+    "mean_within_cell_slope_dL_dQ": 1.9916696530510347,
+    "reason": "B8 Loss increases with Q (positive within-cell slope) and many Q<1 rows fall below the irreducible loss E of B1, e.g. floor 0.5; this contradicts B6/B7 and the problem definition, so only the Q=1 rows are used (as a classical-law check)."
+  },
+  "data_evidence": "B6/B7 semi-synthetic calibration only",
+  "not_identified_from_real_quality_experiment": true,
+  "A1_quality_scale_not_proven_comparable_to_B6_Q_score": true,
+  "B7_B6_id_overlap": 360,
+  "validation": {
+    "B6": {
+      "n": 360,
+      "mae": 0.039390019873547295,
+      "rmse": 0.05036150159972633
+    },
+    "B7_new_only": {
+      "n": 90,
+      "mae": 0.032177730088178765,
+      "rmse": 0.04116749717156589
+    },
+    "B8_Q_eq_1_classical": {
+      "n": 138,
+      "mae": 0.028895813059597566,
+      "rmse": 0.0355024038523145
+    }
+  }
+}

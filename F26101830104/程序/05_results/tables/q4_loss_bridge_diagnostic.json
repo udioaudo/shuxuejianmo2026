@@ -1,0 +1,46 @@
+{
+  "basis": "C6 (loss_benchmark_bridge_expanded.csv)",
+  "high": {
+    "n": 7,
+    "validation": "LOO",
+    "slope_per_loss": -0.8816640389379025,
+    "intercept": 7.671652427888839,
+    "mae": 0.47810768059179104,
+    "rmse": 0.5528338936058492,
+    "baseline_mae": 0.3755617007914142,
+    "spearman_raw": -0.6071428571428572,
+    "loss_range": [
+      2.0933,
+      2.5978
+    ],
+    "score_range": [
+      5.07026822083096,
+      6.059841492942702
+    ],
+    "organizations": 1,
+    "observed_score_sd": 0.39296291756970786
+  },
+  "medium": {
+    "n": 68,
+    "validation": "organization_grouped_CV",
+    "slope_per_loss": -19.184607035173126,
+    "intercept": 61.43367686694395,
+    "mae": 9.789345683981438,
+    "rmse": 11.995827038845729,
+    "baseline_mae": 10.110970830997104,
+    "spearman_raw": -0.5087243231340064,
+    "loss_range": [
+      1.65,
+      2.84
+    ],
+    "score_range": [
+      3.795510241848182,
+      47.98045991216864
+    ],
+    "organizations": 11,
+    "observed_score_sd": 11.446657783462962
+  },
+  "warning": "Different validation sets in medium group; neither regression is a universal Loss-to-Benchmark law.",
+  "direct_transfer_to_2026_frontier": "not supported by 7 high-comparability records",
+  "medium_data_status": "mixed/approximate according to data description"
+}

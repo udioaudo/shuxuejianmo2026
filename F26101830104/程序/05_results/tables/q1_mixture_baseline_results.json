@@ -1,0 +1,967 @@
+{
+  "input_status": "real_RegMix_train_and_test_estimated_extrapolations_separate",
+  "objective": "13 validation-domain cross-entropy losses; equal-domain mean reported only for summary",
+  "selected_model": "17-component recipe ridge with 16 explanatory columns + intercept",
+  "selection": "5-fold group CV within 1m training recipes only",
+  "scaling": "No scale correction learned from any test or estimated label",
+  "dataset_specs": {
+    "train": {
+      "status": "real_train",
+      "n": 512,
+      "mixture_sum": {
+        "raw_sum_min": 0.9960000000000001,
+        "raw_sum_max": 1.0030000000000001,
+        "max_abs_sum_error": 0.0039999999999998925
+      }
+    },
+    "test_1m": {
+      "status": "real_holdout_same_scale",
+      "n": 256,
+      "mixture_sum": {
+        "raw_sum_min": 0.9970000000000001,
+        "raw_sum_max": 1.0030000000000001,
+        "max_abs_sum_error": 0.0030000000000001137
+      }
+    },
+    "test_60m": {
+      "status": "real_holdout_cross_scale",
+      "n": 256,
+      "mixture_sum": {
+        "raw_sum_min": 0.9970000000000001,
+        "raw_sum_max": 1.0030000000000001,
+        "max_abs_sum_error": 0.0030000000000001137
+      }
+    },
+    "test_1B": {
+      "status": "real_holdout_cross_scale",
+      "n": 64,
+      "mixture_sum": {
+        "raw_sum_min": 0.998,
+        "raw_sum_max": 1.002,
+        "max_abs_sum_error": 0.0020000000000000018
+      }
+    },
+    "est_10b": {
+      "status": "estimated_losses_not_observations",
+      "n": 63,
+      "mixture_sum": {
+        "raw_sum_min": 0.998,
+        "raw_sum_max": 1.0020000000000002,
+        "max_abs_sum_error": 0.002000000000000224
+      }
+    },
+    "est_70b": {
+      "status": "estimated_losses_not_observations",
+      "n": 63,
+      "mixture_sum": {
+        "raw_sum_min": 0.998,
+        "raw_sum_max": 1.0020000000000002,
+        "max_abs_sum_error": 0.002000000000000224
+      }
+    }
+  },
+  "per_set": {
+    "train": {
+      "n": 512,
+      "status": "real_train",
+      "mae_mean_over_13": 0.4033755634044358,
+      "baseline_mae_mean_over_13": 0.6426953335824062,
+      "spearman_mean_over_13": 0.8429846596866243,
+      "reference_loss_mean_over_13": 5.344656776171178,
+      "predicted_loss_mean_over_13": 5.344656776171178
+    },
+    "test_1m": {
+      "n": 256,
+      "status": "real_holdout_same_scale",
+      "mae_mean_over_13": 0.385847566611854,
+      "baseline_mae_mean_over_13": 0.6193481061510773,
+      "spearman_mean_over_13": 0.8320488428085989,
+      "reference_loss_mean_over_13": 5.282281966306842,
+      "predicted_loss_mean_over_13": 5.331238285519246
+    },
+    "test_60m": {
+      "n": 256,
+      "status": "real_holdout_cross_scale",
+      "mae_mean_over_13": 1.5143262339365562,
+      "baseline_mae_mean_over_13": 1.5236709562660298,
+      "spearman_mean_over_13": 0.8307108540063736,
+      "reference_loss_mean_over_13": 3.8229111776185722,
+      "predicted_loss_mean_over_13": 5.331238285519246
+    },
+    "test_1B": {
+      "n": 64,
+      "status": "real_holdout_cross_scale",
+      "mae_mean_over_13": 3.188168369345422,
+      "baseline_mae_mean_over_13": 3.1190864943142063,
+      "spearman_mean_over_13": 0.7251831501831502,
+      "reference_loss_mean_over_13": 2.2255702818569714,
+      "predicted_loss_mean_over_13": 5.413337504553464
+    },
+    "est_10b": {
+      "n": 63,
+      "status": "estimated_losses_not_observations",
+      "mae_mean_over_13": 3.5765307074498045,
+      "baseline_mae_mean_over_13": 3.547197801812203,
+      "spearman_mean_over_13": 0.49052291236436446,
+      "reference_loss_mean_over_13": 1.7974589743589744,
+      "predicted_loss_mean_over_13": 5.372436614085484
+    },
+    "est_70b": {
+      "n": 63,
+      "status": "estimated_losses_not_observations",
+      "mae_mean_over_13": 3.9591050664241627,
+      "baseline_mae_mean_over_13": 3.9301108665252684,
+      "spearman_mean_over_13": 0.41517636184862367,
+      "reference_loss_mean_over_13": 1.4145459096459094,
+      "predicted_loss_mean_over_13": 5.372436614085484
+    }
+  },
+  "per_domain": {
+    "train": [
+      {
+        "domain_loss": "metric/the_pile_arxiv_val_loss",
+        "ridge_mae": 0.556131238273035,
+        "ridge_rmse": 0.7076222122478252,
+        "train_mean_baseline_mae": 0.8136533488741406,
+        "spearman": 0.7972213639120632,
+        "reference_mean": 5.04406272014603,
+        "predicted_mean": 5.04406272014603,
+        "alpha": 1.0
+      },
+      {
+        "domain_loss": "metric/the_pile_freelaw_val_loss",
+        "ridge_mae": 0.41347874834997633,
+        "ridge_rmse": 0.47872248789933225,
+        "train_mean_baseline_mae": 0.6743366398968647,
+        "spearman": 0.8331698073665899,
+        "reference_mean": 5.28257419122383,
+        "predicted_mean": 5.28257419122383,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_pubmed_central_val_loss",
+        "ridge_mae": 0.482005550110425,
+        "ridge_rmse": 0.5674445307046769,
+        "train_mean_baseline_mae": 0.7410538120911951,
+        "spearman": 0.8026789648207276,
+        "reference_mean": 5.1759300655685365,
+        "predicted_mean": 5.1759300655685365,
+        "alpha": 0.0001
+      },
+      {
+        "domain_loss": "metric/the_pile_wikipedia_en_val_loss",
+        "ridge_mae": 0.23817126616763254,
+        "ridge_rmse": 0.2886549607720625,
+        "train_mean_baseline_mae": 0.4391696294769645,
+        "spearman": 0.8734172224224946,
+        "reference_mean": 5.810897937975824,
+        "predicted_mean": 5.810897937975824,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_dm_mathematics_val_loss",
+        "ridge_mae": 1.0704297928092479,
+        "ridge_rmse": 1.1663928627392355,
+        "train_mean_baseline_mae": 1.4433089760223083,
+        "spearman": 0.7602087946750439,
+        "reference_mean": 3.8935756706632674,
+        "predicted_mean": 3.8935756706632665,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_github_val_loss",
+        "ridge_mae": 0.5594878597868005,
+        "ridge_rmse": 0.6900341054817665,
+        "train_mean_baseline_mae": 0.8624725725221651,
+        "spearman": 0.8350638117840262,
+        "reference_mean": 5.27951684454456,
+        "predicted_mean": 5.27951684454456,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_stackexchange_val_loss",
+        "ridge_mae": 0.4145245665753675,
+        "ridge_rmse": 0.5172685729370858,
+        "train_mean_baseline_mae": 0.6323173360142391,
+        "spearman": 0.8325717618818737,
+        "reference_mean": 5.245853285305202,
+        "predicted_mean": 5.245853285305202,
+        "alpha": 1.0
+      },
+      {
+        "domain_loss": "metric/the_pile_gutenberg_pg_19_val_loss",
+        "ridge_mae": 0.18652133164600304,
+        "ridge_rmse": 0.2403246513167636,
+        "train_mean_baseline_mae": 0.35442924587550806,
+        "spearman": 0.8872134853400625,
+        "reference_mean": 5.445764048025012,
+        "predicted_mean": 5.445764048025012,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_pile_cc_val_loss",
+        "ridge_mae": 0.1253860360753637,
+        "ridge_rmse": 0.1541565555208829,
+        "train_mean_baseline_mae": 0.26293785396410385,
+        "spearman": 0.8948376935489409,
+        "reference_mean": 5.727793703787029,
+        "predicted_mean": 5.727793703787029,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_ubuntu_irc_val_loss",
+        "ridge_mae": 0.5871617033543868,
+        "ridge_rmse": 0.6702138719564698,
+        "train_mean_baseline_mae": 0.9221609079831978,
+        "spearman": 0.8002064057117679,
+        "reference_mean": 6.55348688736558,
+        "predicted_mean": 6.55348688736558,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_hackernews_val_loss",
+        "ridge_mae": 0.15818117035288692,
+        "ridge_rmse": 0.1958509710986062,
+        "train_mean_baseline_mae": 0.27976834779110504,
+        "spearman": 0.8439171916663805,
+        "reference_mean": 5.403714658692479,
+        "predicted_mean": 5.403714658692479,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_pubmed_abstracts_val_loss",
+        "ridge_mae": 0.22669875655210492,
+        "ridge_rmse": 0.2939292629247743,
+        "train_mean_baseline_mae": 0.47180480832321336,
+        "spearman": 0.918044701508337,
+        "reference_mean": 5.439561689272523,
+        "predicted_mean": 5.439561689272523,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_uspto_backgrounds_val_loss",
+        "ridge_mae": 0.22570430420443505,
+        "ridge_rmse": 0.2690892505908332,
+        "train_mean_baseline_mae": 0.45762585773627507,
+        "spearman": 0.8802493712878086,
+        "reference_mean": 5.177806387655437,
+        "predicted_mean": 5.177806387655437,
+        "alpha": 1e-06
+      }
+    ],
+    "test_1m": [
+      {
+        "domain_loss": "metric/the_pile_arxiv_val_loss",
+        "ridge_mae": 0.48633430057862315,
+        "ridge_rmse": 0.5786017875288714,
+        "train_mean_baseline_mae": 0.6616908192154369,
+        "spearman": 0.7458292801556419,
+        "reference_mean": 4.8789487993344665,
+        "predicted_mean": 5.050851389838095,
+        "alpha": 1.0
+      },
+      {
+        "domain_loss": "metric/the_pile_freelaw_val_loss",
+        "ridge_mae": 0.41709570971599585,
+        "ridge_rmse": 0.48056186056100186,
+        "train_mean_baseline_mae": 0.6284809671633411,
+        "spearman": 0.7708750572213319,
+        "reference_mean": 5.315981733612716,
+        "predicted_mean": 5.352690132033559,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_pubmed_central_val_loss",
+        "ridge_mae": 0.45838634619307433,
+        "ridge_rmse": 0.5311692109680559,
+        "train_mean_baseline_mae": 0.7518351070575591,
+        "spearman": 0.8291599908445867,
+        "reference_mean": 5.088126305490732,
+        "predicted_mean": 5.13464287893674,
+        "alpha": 0.0001
+      },
+      {
+        "domain_loss": "metric/the_pile_wikipedia_en_val_loss",
+        "ridge_mae": 0.24673672004822278,
+        "ridge_rmse": 0.2957655482568362,
+        "train_mean_baseline_mae": 0.45798412797012134,
+        "spearman": 0.8793352311741816,
+        "reference_mean": 5.815661903470755,
+        "predicted_mean": 5.805594335248152,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_dm_mathematics_val_loss",
+        "ridge_mae": 1.050604562237348,
+        "ridge_rmse": 1.1604516384480388,
+        "train_mean_baseline_mae": 1.455323391721322,
+        "spearman": 0.7633132581826504,
+        "reference_mean": 3.75905832182616,
+        "predicted_mean": 3.8009179724723965,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_github_val_loss",
+        "ridge_mae": 0.5069407161623305,
+        "ridge_rmse": 0.6128756379934885,
+        "train_mean_baseline_mae": 0.8036196430584823,
+        "spearman": 0.8353599221789882,
+        "reference_mean": 5.073727259412408,
+        "predicted_mean": 5.2166759824855715,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_stackexchange_val_loss",
+        "ridge_mae": 0.37425690252143673,
+        "ridge_rmse": 0.448113239128927,
+        "train_mean_baseline_mae": 0.5574903953165631,
+        "spearman": 0.8222440775921261,
+        "reference_mean": 5.119640211574733,
+        "predicted_mean": 5.218205712442276,
+        "alpha": 1.0
+      },
+      {
+        "domain_loss": "metric/the_pile_gutenberg_pg_19_val_loss",
+        "ridge_mae": 0.20087580325497817,
+        "ridge_rmse": 0.25682994125802955,
+        "train_mean_baseline_mae": 0.377411037843558,
+        "spearman": 0.8910763332570381,
+        "reference_mean": 5.429231559857726,
+        "predicted_mean": 5.449482414201135,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_pile_cc_val_loss",
+        "ridge_mae": 0.1241023887156956,
+        "ridge_rmse": 0.15316736706390968,
+        "train_mean_baseline_mae": 0.2616700470971409,
+        "spearman": 0.901814631494621,
+        "reference_mean": 5.733697077259421,
+        "predicted_mean": 5.736225433739582,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_ubuntu_irc_val_loss",
+        "ridge_mae": 0.5659294208359309,
+        "ridge_rmse": 0.648659198702674,
+        "train_mean_baseline_mae": 0.9077590291853994,
+        "spearman": 0.7629241531242846,
+        "reference_mean": 6.489985771477222,
+        "predicted_mean": 6.529090699031077,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_hackernews_val_loss",
+        "ridge_mae": 0.15696109538085468,
+        "ridge_rmse": 0.19085307250643496,
+        "train_mean_baseline_mae": 0.2837282214895822,
+        "spearman": 0.8445582513160904,
+        "reference_mean": 5.3904115948826075,
+        "predicted_mean": 5.407437237361464,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_pubmed_abstracts_val_loss",
+        "ridge_mae": 0.20343607770357997,
+        "ridge_rmse": 0.2628349434548643,
+        "train_mean_baseline_mae": 0.47394343944324646,
+        "spearman": 0.9226002803845271,
+        "reference_mean": 5.414837868884206,
+        "predicted_mean": 5.422038064299372,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_uspto_backgrounds_val_loss",
+        "ridge_mae": 0.22435832260602906,
+        "ridge_rmse": 0.272544529366625,
+        "train_mean_baseline_mae": 0.4305891534022521,
+        "spearman": 0.8475444895857175,
+        "reference_mean": 5.160357154905796,
+        "predicted_mean": 5.182245459660792,
+        "alpha": 1e-06
+      }
+    ],
+    "test_60m": [
+      {
+        "domain_loss": "metric/the_pile_arxiv_val_loss",
+        "ridge_mae": 1.765502026376958,
+        "ridge_rmse": 1.8267134809642054,
+        "train_mean_baseline_mae": 1.762066323266481,
+        "spearman": 0.7630729285877775,
+        "reference_mean": 3.285349363461137,
+        "predicted_mean": 5.050851389838095,
+        "alpha": 1.0
+      },
+      {
+        "domain_loss": "metric/the_pile_freelaw_val_loss",
+        "ridge_mae": 1.3797549946946228,
+        "ridge_rmse": 1.4449074180494355,
+        "train_mean_baseline_mae": 1.3113937210437143,
+        "spearman": 0.763607232776379,
+        "reference_mean": 3.9729351373389363,
+        "predicted_mean": 5.352690132033559,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_pubmed_central_val_loss",
+        "ridge_mae": 1.7103472793643784,
+        "ridge_rmse": 1.7565868873278316,
+        "train_mean_baseline_mae": 1.751634465996176,
+        "spearman": 0.8490043488212404,
+        "reference_mean": 3.4242955995723605,
+        "predicted_mean": 5.13464287893674,
+        "alpha": 0.0001
+      },
+      {
+        "domain_loss": "metric/the_pile_wikipedia_en_val_loss",
+        "ridge_mae": 1.3422433500489397,
+        "ridge_rmse": 1.3712922555466869,
+        "train_mean_baseline_mae": 1.3475469527766109,
+        "spearman": 0.8812907701991302,
+        "reference_mean": 4.463350985199213,
+        "predicted_mean": 5.805594335248152,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_dm_mathematics_val_loss",
+        "ridge_mae": 1.420884381565402,
+        "ridge_rmse": 1.5636403212667207,
+        "train_mean_baseline_mae": 1.4441464752526372,
+        "spearman": 0.7474543659876401,
+        "reference_mean": 2.458022229373455,
+        "predicted_mean": 3.8009179724723965,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_github_val_loss",
+        "ridge_mae": 2.582553408714989,
+        "ridge_rmse": 2.63488330354406,
+        "train_mean_baseline_mae": 2.648033485060296,
+        "spearman": 0.8373962863355457,
+        "reference_mean": 2.6341225737705827,
+        "predicted_mean": 5.2166759824855715,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_stackexchange_val_loss",
+        "ridge_mae": 1.7217226360784739,
+        "ridge_rmse": 1.7643035927481117,
+        "train_mean_baseline_mae": 1.7519169563092873,
+        "spearman": 0.8216296635385671,
+        "reference_mean": 3.496483076363802,
+        "predicted_mean": 5.218205712442276,
+        "alpha": 1.0
+      },
+      {
+        "domain_loss": "metric/the_pile_gutenberg_pg_19_val_loss",
+        "ridge_mae": 0.9891106777640525,
+        "ridge_rmse": 1.0114244141278192,
+        "train_mean_baseline_mae": 0.9867976665700553,
+        "spearman": 0.8951397631036849,
+        "reference_mean": 4.460371736437082,
+        "predicted_mean": 5.449482414201135,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_pile_cc_val_loss",
+        "ridge_mae": 1.0674312227393778,
+        "ridge_rmse": 1.0787230485220403,
+        "train_mean_baseline_mae": 1.0589994927868247,
+        "spearman": 0.8928516250858318,
+        "reference_mean": 4.668794211000204,
+        "predicted_mean": 5.736225433739582,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_ubuntu_irc_val_loss",
+        "ridge_mae": 1.9655563265449025,
+        "ridge_rmse": 2.0384229546528716,
+        "train_mean_baseline_mae": 1.9908096627041232,
+        "spearman": 0.7599536507209887,
+        "reference_mean": 4.563534372486174,
+        "predicted_mean": 6.529090699031077,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_hackernews_val_loss",
+        "ridge_mae": 0.9933696560654968,
+        "ridge_rmse": 1.0092119051960322,
+        "train_mean_baseline_mae": 0.989647077396512,
+        "spearman": 0.8395270656900892,
+        "reference_mean": 4.414067581295967,
+        "predicted_mean": 5.407437237361464,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_pubmed_abstracts_val_loss",
+        "ridge_mae": 1.3494635810686617,
+        "ridge_rmse": 1.374705289791618,
+        "train_mean_baseline_mae": 1.370867724152049,
+        "spearman": 0.9200989929045548,
+        "reference_mean": 4.07257448323071,
+        "predicted_mean": 5.422038064299372,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_uspto_backgrounds_val_loss",
+        "ridge_mae": 1.3983015001489756,
+        "ridge_rmse": 1.4229963615449464,
+        "train_mean_baseline_mae": 1.3938624281436205,
+        "spearman": 0.8282144083314258,
+        "reference_mean": 3.7839439595118165,
+        "predicted_mean": 5.182245459660792,
+        "alpha": 1e-06
+      }
+    ],
+    "test_1B": [
+      {
+        "domain_loss": "metric/the_pile_arxiv_val_loss",
+        "ridge_mae": 3.197148835879428,
+        "ridge_rmse": 3.2104612174307126,
+        "train_mean_baseline_mae": 3.249673049442905,
+        "spearman": 0.8746794871794872,
+        "reference_mean": 1.794389670703125,
+        "predicted_mean": 4.991538506582553,
+        "alpha": 1.0
+      },
+      {
+        "domain_loss": "metric/the_pile_freelaw_val_loss",
+        "ridge_mae": 3.36727116111196,
+        "ridge_rmse": 3.3732714031372018,
+        "train_mean_baseline_mae": 3.3002498610832047,
+        "spearman": 0.702518315018315,
+        "reference_mean": 1.9823243301406248,
+        "predicted_mean": 5.349595491252584,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_pubmed_central_val_loss",
+        "ridge_mae": 3.3653059715070937,
+        "ridge_rmse": 3.3841111590790915,
+        "train_mean_baseline_mae": 3.4147866158810367,
+        "spearman": 0.761172161172161,
+        "reference_mean": 1.7611434496875,
+        "predicted_mean": 5.126449421194594,
+        "alpha": 0.0001
+      },
+      {
+        "domain_loss": "metric/the_pile_wikipedia_en_val_loss",
+        "ridge_mae": 3.3043396336125532,
+        "ridge_rmse": 3.3070708362230614,
+        "train_mean_baseline_mae": 3.3021605527883238,
+        "spearman": 0.7927197802197802,
+        "reference_mean": 2.5087373851875,
+        "predicted_mean": 5.813077018800053,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_dm_mathematics_val_loss",
+        "ridge_mae": 2.620379093869825,
+        "ridge_rmse": 2.6799264848542848,
+        "train_mean_baseline_mae": 2.3426758352257675,
+        "spearman": 0.6762820512820512,
+        "reference_mean": 1.5508998354374999,
+        "predicted_mean": 4.1712789293073245,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_github_val_loss",
+        "ridge_mae": 4.439203908655463,
+        "ridge_rmse": 4.449109074403852,
+        "train_mean_baseline_mae": 4.22398853070081,
+        "spearman": 0.6638278388278388,
+        "reference_mean": 1.05552831384375,
+        "predicted_mean": 5.494732222499213,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_stackexchange_val_loss",
+        "ridge_mae": 3.5194212933256814,
+        "ridge_rmse": 3.5224127049417104,
+        "train_mean_baseline_mae": 3.3896666736958267,
+        "spearman": 0.8381410256410255,
+        "reference_mean": 1.856186611609375,
+        "predicted_mean": 5.375607904935057,
+        "alpha": 1.0
+      },
+      {
+        "domain_loss": "metric/the_pile_gutenberg_pg_19_val_loss",
+        "ridge_mae": 2.6692988175457,
+        "ridge_rmse": 2.6752933513897883,
+        "train_mean_baseline_mae": 2.632878520165637,
+        "spearman": 0.6313186813186812,
+        "reference_mean": 2.812885527859375,
+        "predicted_mean": 5.482184345405075,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_pile_cc_val_loss",
+        "ridge_mae": 2.681873818280021,
+        "ridge_rmse": 2.684418716998685,
+        "train_mean_baseline_mae": 2.7446875785995286,
+        "spearman": 0.8789377289377288,
+        "reference_mean": 2.9831061251875,
+        "predicted_mean": 5.664979943467521,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_ubuntu_irc_val_loss",
+        "ridge_mae": 4.065609460416987,
+        "ridge_rmse": 4.1231257257111995,
+        "train_mean_baseline_mae": 3.9102627329280795,
+        "spearman": 0.654624542124542,
+        "reference_mean": 2.6432241544375,
+        "predicted_mean": 6.7036187084183965,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_hackernews_val_loss",
+        "ridge_mae": 2.310311878727718,
+        "ridge_rmse": 2.3165916208075847,
+        "train_mean_baseline_mae": 2.2546209888018542,
+        "spearman": 0.5691391941391941,
+        "reference_mean": 3.149093669890625,
+        "predicted_mean": 5.459405548618344,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_pubmed_abstracts_val_loss",
+        "ridge_mae": 3.020640985639375,
+        "ridge_rmse": 3.02897203640397,
+        "train_mean_baseline_mae": 2.9777270879287725,
+        "spearman": 0.6409340659340659,
+        "reference_mean": 2.4618346013437504,
+        "predicted_mean": 5.482475586983125,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_uspto_backgrounds_val_loss",
+        "ridge_mae": 2.8853839429186885,
+        "ridge_rmse": 2.8884792284402336,
+        "train_mean_baseline_mae": 2.804746398842937,
+        "spearman": 0.7430860805860805,
+        "reference_mean": 2.3730599888125,
+        "predicted_mean": 5.258443931731189,
+        "alpha": 1e-06
+      }
+    ],
+    "est_10b": [
+      {
+        "domain_loss": "metric/the_pile_arxiv_val_loss",
+        "ridge_mae": 3.334523873722541,
+        "ridge_rmse": 3.3816528574153266,
+        "train_mean_baseline_mae": 3.345167482050792,
+        "spearman": 0.6668586789554531,
+        "reference_mean": 1.6988952380952382,
+        "predicted_mean": 5.033419111817779,
+        "alpha": 1.0
+      },
+      {
+        "domain_loss": "metric/the_pile_freelaw_val_loss",
+        "ridge_mae": 3.416938640984021,
+        "ridge_rmse": 3.4563338281290474,
+        "train_mean_baseline_mae": 3.536931334080973,
+        "spearman": 0.7075652841781874,
+        "reference_mean": 1.7456428571428568,
+        "predicted_mean": 5.162581498126879,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_pubmed_central_val_loss",
+        "ridge_mae": 3.4389391131264517,
+        "ridge_rmse": 3.4715347464860886,
+        "train_mean_baseline_mae": 3.4513919703304414,
+        "spearman": 0.6757392473118279,
+        "reference_mean": 1.7245380952380946,
+        "predicted_mean": 5.163477208364548,
+        "alpha": 0.0001
+      },
+      {
+        "domain_loss": "metric/the_pile_wikipedia_en_val_loss",
+        "ridge_mae": 3.8699184713878205,
+        "ridge_rmse": 3.8849699648764346,
+        "train_mean_baseline_mae": 3.8629042871821726,
+        "spearman": 0.41319636139881405,
+        "reference_mean": 1.9479936507936506,
+        "predicted_mean": 5.817912122181473,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_dm_mathematics_val_loss",
+        "ridge_mae": 2.760390620584088,
+        "ridge_rmse": 2.833484049609584,
+        "train_mean_baseline_mae": 2.546669321456918,
+        "spearman": 0.6490975422427036,
+        "reference_mean": 1.3469063492063489,
+        "predicted_mean": 4.087107089387612,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_github_val_loss",
+        "ridge_mae": 3.6604029009885752,
+        "ridge_rmse": 3.702062275790305,
+        "train_mean_baseline_mae": 3.491661288989005,
+        "spearman": 0.6037826420890937,
+        "reference_mean": 1.7878555555555555,
+        "predicted_mean": 5.4482584565441305,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_stackexchange_val_loss",
+        "ridge_mae": 3.564856756798662,
+        "ridge_rmse": 3.5828451584645737,
+        "train_mean_baseline_mae": 3.4894421741940915,
+        "spearman": 0.540833103354798,
+        "reference_mean": 1.7564111111111111,
+        "predicted_mean": 5.321267867909771,
+        "alpha": 1.0
+      },
+      {
+        "domain_loss": "metric/the_pile_gutenberg_pg_19_val_loss",
+        "ridge_mae": 3.5705711735183634,
+        "ridge_rmse": 3.584770950861484,
+        "train_mean_baseline_mae": 3.6384735718345356,
+        "spearman": 0.5064804147465439,
+        "reference_mean": 1.807290476190476,
+        "predicted_mean": 5.377861649708838,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_pile_cc_val_loss",
+        "ridge_mae": 3.796484697593005,
+        "ridge_rmse": 3.807234990233206,
+        "train_mean_baseline_mae": 3.797892116485441,
+        "spearman": 0.15255376344086022,
+        "reference_mean": 1.9299015873015875,
+        "predicted_mean": 5.726386284894592,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_ubuntu_irc_val_loss",
+        "ridge_mae": 4.449482174971312,
+        "ridge_rmse": 4.475325727855535,
+        "train_mean_baseline_mae": 4.298571014349707,
+        "spearman": 0.49831989247311836,
+        "reference_mean": 2.254915873015873,
+        "predicted_mean": 6.704398047987184,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_hackernews_val_loss",
+        "ridge_mae": 3.568274683218488,
+        "ridge_rmse": 3.581979774658011,
+        "train_mean_baseline_mae": 3.5815559285337484,
+        "spearman": 0.1919162826420891,
+        "reference_mean": 1.8221587301587303,
+        "predicted_mean": 5.390433413377217,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_pubmed_abstracts_val_loss",
+        "ridge_mae": 3.631834208471484,
+        "ridge_rmse": 3.6532792921226775,
+        "train_mean_baseline_mae": 3.6201124829233167,
+        "spearman": 0.32555683563748083,
+        "reference_mean": 1.8194492063492063,
+        "predicted_mean": 5.45128341482069,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_uspto_backgrounds_val_loss",
+        "ridge_mae": 3.4322818814826475,
+        "ridge_rmse": 3.4485148289436336,
+        "train_mean_baseline_mae": 3.4527984511475007,
+        "spearman": 0.44489781226576725,
+        "reference_mean": 1.7250079365079365,
+        "predicted_mean": 5.157289817990583,
+        "alpha": 1e-06
+      }
+    ],
+    "est_70b": [
+      {
+        "domain_loss": "metric/the_pile_arxiv_val_loss",
+        "ridge_mae": 3.6979460959447636,
+        "ridge_rmse": 3.747312214345197,
+        "train_mean_baseline_mae": 3.7085897042730136,
+        "spearman": 0.6286002304147467,
+        "reference_mean": 1.3354730158730161,
+        "predicted_mean": 5.033419111817779,
+        "alpha": 1.0
+      },
+      {
+        "domain_loss": "metric/the_pile_freelaw_val_loss",
+        "ridge_mae": 3.7870322917776735,
+        "ridge_rmse": 3.8279554272554615,
+        "train_mean_baseline_mae": 3.9070249848746235,
+        "spearman": 0.6501536098310292,
+        "reference_mean": 1.375549206349206,
+        "predicted_mean": 5.162581498126879,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_pubmed_central_val_loss",
+        "ridge_mae": 3.806739113126451,
+        "ridge_rmse": 3.8411901232661982,
+        "train_mean_baseline_mae": 3.8191919703304413,
+        "spearman": 0.5888536866359447,
+        "reference_mean": 1.3567380952380952,
+        "predicted_mean": 5.163477208364548,
+        "alpha": 0.0001
+      },
+      {
+        "domain_loss": "metric/the_pile_wikipedia_en_val_loss",
+        "ridge_mae": 4.2834803761497255,
+        "ridge_rmse": 4.298331143508216,
+        "train_mean_baseline_mae": 4.276466191944078,
+        "spearman": 0.34072580645161293,
+        "reference_mean": 1.5344317460317463,
+        "predicted_mean": 5.817912122181473,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_dm_mathematics_val_loss",
+        "ridge_mae": 3.047773160266627,
+        "ridge_rmse": 3.1227683141204015,
+        "train_mean_baseline_mae": 2.8384550357426326,
+        "spearman": 0.6205357142857143,
+        "reference_mean": 1.0551206349206348,
+        "predicted_mean": 4.087107089387612,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_github_val_loss",
+        "ridge_mae": 4.042571154956829,
+        "ridge_rmse": 4.085878400998781,
+        "train_mean_baseline_mae": 3.873829542957258,
+        "spearman": 0.5048963133640553,
+        "reference_mean": 1.4056873015873015,
+        "predicted_mean": 5.4482584565441305,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_stackexchange_val_loss",
+        "ridge_mae": 3.940123423465328,
+        "ridge_rmse": 3.9593149900864457,
+        "train_mean_baseline_mae": 3.864708840860758,
+        "spearman": 0.44552185969341673,
+        "reference_mean": 1.3811444444444443,
+        "predicted_mean": 5.321267867909771,
+        "alpha": 1.0
+      },
+      {
+        "domain_loss": "metric/the_pile_gutenberg_pg_19_val_loss",
+        "ridge_mae": 3.954183871931062,
+        "ridge_rmse": 3.9684646075344956,
+        "train_mean_baseline_mae": 4.022086270247235,
+        "spearman": 0.4254992319508449,
+        "reference_mean": 1.4236777777777783,
+        "predicted_mean": 5.377861649708838,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_pile_cc_val_loss",
+        "ridge_mae": 4.205910094418402,
+        "ridge_rmse": 4.21598357500148,
+        "train_mean_baseline_mae": 4.207317513310838,
+        "spearman": 0.09370199692780339,
+        "reference_mean": 1.5204761904761908,
+        "predicted_mean": 5.726386284894592,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_ubuntu_irc_val_loss",
+        "ridge_mae": 4.9305345559236935,
+        "ridge_rmse": 4.95652342387238,
+        "train_mean_baseline_mae": 4.779623395302088,
+        "spearman": 0.39096571342237174,
+        "reference_mean": 1.773863492063492,
+        "predicted_mean": 6.704398047987184,
+        "alpha": 1e-06
+      },
+      {
+        "domain_loss": "metric/the_pile_hackernews_val_loss",
+        "ridge_mae": 3.9555699213137268,
+        "ridge_rmse": 3.9687821013311018,
+        "train_mean_baseline_mae": 3.968851166628987,
+        "spearman": 0.10503072196620584,
+        "reference_mean": 1.4348634920634915,
+        "predicted_mean": 5.390433413377217,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_pubmed_abstracts_val_loss",
+        "ridge_mae": 4.018177065614341,
+        "ridge_rmse": 4.039119582940696,
+        "train_mean_baseline_mae": 4.006455340066174,
+        "spearman": 0.21783794162826423,
+        "reference_mean": 1.4331063492063492,
+        "predicted_mean": 5.45128341482069,
+        "alpha": 0.01
+      },
+      {
+        "domain_loss": "metric/the_pile_uspto_backgrounds_val_loss",
+        "ridge_mae": 3.798324738625505,
+        "ridge_rmse": 3.814761997422622,
+        "train_mean_baseline_mae": 3.818841308290358,
+        "spearman": 0.38496987746009753,
+        "reference_mean": 1.3589650793650792,
+        "predicted_mean": 5.157289817990583,
+        "alpha": 1e-06
+      }
+    ]
+  },
+  "train_cv": {
+    "metric/the_pile_arxiv_val_loss": {
+      "alpha": 1.0,
+      "mae": 0.5668320199375754
+    },
+    "metric/the_pile_freelaw_val_loss": {
+      "alpha": 1e-06,
+      "mae": 0.4301340060285591
+    },
+    "metric/the_pile_pubmed_central_val_loss": {
+      "alpha": 0.0001,
+      "mae": 0.500942174034826
+    },
+    "metric/the_pile_wikipedia_en_val_loss": {
+      "alpha": 0.01,
+      "mae": 0.25003035995250045
+    },
+    "metric/the_pile_dm_mathematics_val_loss": {
+      "alpha": 1e-06,
+      "mae": 1.1057044273344403
+    },
+    "metric/the_pile_github_val_loss": {
+      "alpha": 1e-06,
+      "mae": 0.583692019710485
+    },
+    "metric/the_pile_stackexchange_val_loss": {
+      "alpha": 1.0,
+      "mae": 0.4223453106836548
+    },
+    "metric/the_pile_gutenberg_pg_19_val_loss": {
+      "alpha": 0.01,
+      "mae": 0.19316576380124795
+    },
+    "metric/the_pile_pile_cc_val_loss": {
+      "alpha": 1e-06,
+      "mae": 0.12947091377307204
+    },
+    "metric/the_pile_ubuntu_irc_val_loss": {
+      "alpha": 1e-06,
+      "mae": 0.6053757131612951
+    },
+    "metric/the_pile_hackernews_val_loss": {
+      "alpha": 0.01,
+      "mae": 0.16563201183812853
+    },
+    "metric/the_pile_pubmed_abstracts_val_loss": {
+      "alpha": 0.01,
+      "mae": 0.2341937518972793
+    },
+    "metric/the_pile_uspto_backgrounds_val_loss": {
+      "alpha": 1e-06,
+      "mae": 0.23694194663335802
+    }
+  }
+}

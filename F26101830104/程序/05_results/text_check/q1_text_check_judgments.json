@@ -1,0 +1,226 @@
+{
+  "BkiUdR44uBhhxNZlVUX-": {
+    "sample": 1,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "音乐解说，可以用来训练AI的音乐能力，但是最好是配合多模态的AI模型，把原曲找出来搭配着进行训练，要不然就只能训练对于音乐说法的认知了。",
+    "reader": "队员甲",
+    "direction": null
+  },
+  "BkiUdbA4uBhhxQOlnruZ": {
+    "sample": 2,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "技术博客，好文章，用来训练AI的编程和技术能力。",
+    "reader": "队员甲",
+    "direction": null
+  },
+  "BkiUcNfxK6-gDz87O_GR": {
+    "sample": 3,
+    "consistent": "不一致",
+    "grade": "",
+    "reason": "与最新的能源情况不符：",
+    "reader": "队员甲",
+    "direction": null
+  },
+  "BkiUdus4ubnjopEPvkkx": {
+    "sample": 4,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "具有比较好的知识、语言和结构信噪比。",
+    "reader": "队员甲",
+    "direction": null
+  },
+  "BkiUdqw5qoTBGz1jzF9G": {
+    "sample": 5,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "正文是一篇结构完整、语言流畅的职场管理文章，有明确主题、因果论述、研究数据引用和具体行为建议，作为通用 AI 预训练语料具有较好的语言与知识价值。内容本身并不特别专业或具有很强的教育深度，因此教育价值 0.46 较合理；末尾混入少量读者评论，且属于普通商业博客内容，也支持无广告/网页纯净度未达到绝对满分。整体来看 Q = 0.842 与文本实际质量较匹配。",
+    "reader": "队员甲",
+    "direction": null
+  },
+  "BkiUdZrxaJiQoZ1WkgLK": {
+    "sample": 6,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "美联社的完整新闻报道，语言规范、信息密度高、多方观点并列，几乎没有网页垃圾。Q=0.867 属于高质量语料是合理的；推理性 0.99 略显偏高，但不影响整体判断。",
+    "reader": "队员乙",
+    "direction": null
+  },
+  "BkiUdFM4dbgg8g9yUp7k": {
+    "sample": 7,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "虽然信息本身有历史知识价值，但主体几乎完全是君主、地区和年份列表，缺乏连续自然语言和解释，对通用语言训练价值有限。Q=0.474 的低分合理。",
+    "reader": "队员乙",
+    "direction": null
+  },
+  "BkiUfZ85qhLB3L4qcsnn": {
+    "sample": 8,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "只有 83 字符的 HTML 链接标签，没有实际语义内容，本质是网页碎片。属于非常典型的低质量训练数据。",
+    "reader": "队员乙",
+    "direction": null
+  },
+  "BkiUbFM4eIfiUOAdUx27": {
+    "sample": 9,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "四行 premake4 命令，没有上下文、解释或完整程序逻辑，能够提供的信息极少，低分合理。",
+    "reader": "队员乙",
+    "direction": null
+  },
+  "BkiUbLPxK4tBVgEFTH12": {
+    "sample": 10,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "有真实事实信息，但正文只有一句说明加大量行政区编号列表，后面还有空的章节标题，知识和语言训练价值都有限。Q=0.466 合理。",
+    "reader": "队员乙",
+    "direction": null
+  },
+  "BkiUdUw4dbghT_5T4aiY": {
+    "sample": 11,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "仅三个 YAML 元数据字段，没有自然语言、代码逻辑或解释内容，几乎不具备独立训练价值，低分合理。",
+    "reader": "队员乙",
+    "direction": null
+  },
+  "BkiUapvxK0wg09KOUoOU": {
+    "sample": 12,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "本质是视频网站的节目宣传简介，内容短、教育价值极低，而且包含明确的 Subscribe 推广语。可读性尚可但综合训练价值低，Q=0.467 合理。",
+    "reader": "队员乙",
+    "direction": null
+  },
+  "BkiUdCU5qsJBjm66-sNA": {
+    "sample": 13,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "前半部分确实有比较完整的蛀牙成因和预防科普，因此教育价值较高有依据；后半部分明显宣传诊所、门店和电话，因此无广告 0.15 也合理。Q=0.722 较好地反映了有知识但商业性明显。",
+    "reader": "队员乙",
+    "direction": null
+  },
+  "BkiUfCrxK7kjXLlzd2_9": {
+    "sample": 14,
+    "consistent": "不一致",
+    "grade": "",
+    "reason": "基本是纯粹的教辅产品广告，只反复宣称 workbook 能提高成绩、通过考试，没有教授任何数学知识。教育价值 0.85 明显虚高，从而使 Q=0.724 也偏高。",
+    "reader": "队员乙",
+    "direction": "too_high"
+  },
+  "BkiUdhTxK1ThhBMLgmAr": {
+    "sample": 15,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "虽然最后明确邀请打电话预约，但前两段确实包含较完整的氟化物用途、适用年龄和龋齿风险人群信息。因此教育价值高、广告性也高的冲突是真实存在的，Q=0.733 可以接受。",
+    "reader": "队员乙",
+    "direction": null
+  },
+  "BkiUb9zxK1Thg9qFcNLj": {
+    "sample": 16,
+    "consistent": "不一致",
+    "grade": "",
+    "reason": "前面的社会和生态背景有一定知识价值，但后半段实质转成膳食补充剂宣传，并声称降血糖、降胰岛素、降血压、减重等多种健康功效，却缺少可靠证据。教育价值 0.84、QuRating 0.85 和 Q=0.774 都偏高。",
+    "reader": "队员乙",
+    "direction": "too_high"
+  },
+  "BkiUdHQ4eIXhrWWONcu-": {
+    "sample": 17,
+    "consistent": "不一致",
+    "grade": "",
+    "reason": "有骨传导原理介绍，但英文语法问题明显，而且存在不严谨甚至错误的医学或听力表述，例如把普通耳机与永久听力损伤进行过度概括。又带有明显产品推荐倾向，Q=0.706 偏高，尤其教育价值 0.81 不合理。",
+    "reader": "队员乙",
+    "direction": "too_high"
+  },
+  "BkiUbGI5qsFAfmG_X3eW": {
+    "sample": 18,
+    "consistent": "不一致",
+    "grade": "",
+    "reason": "这是 WebKit 的完整 C++ 工程源码，来源和代码质量都很高。对于代码模型训练而言价值明显高于普通网页；把整洁度评为 0、可读性仅 0.11，本质上是用自然语言标准误伤了规范代码，因此 Q=0.642 偏低。",
+    "reader": "队员乙",
+    "direction": "too_low"
+  },
+  "BkiUfA05qhDCeKz25qWA": {
+    "sample": 19,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "虽然 zone.js 本身是高质量代码，但这里是约 12.8 万字符的打包构建产物，多个模块合并、许可证重复，远不如原始源码适合作为训练样本。因此 Q=0.593 的中低分合理。",
+    "reader": "队员乙",
+    "direction": null
+  },
+  "BkiUbfk5ixsDMKBa1zO3": {
+    "sample": 20,
+    "consistent": "不一致",
+    "grade": "",
+    "reason": "ZXing 是成熟项目，这个 Objective-C 文件也是完整的实际算法实现，并非生成垃圾或碎片。整洁度 0、可读性 0.10 明显低估了代码本身的结构质量，导致 Q=0.626 偏低。",
+    "reader": "队员乙",
+    "direction": "too_low"
+  },
+  "BkiUcRTxK19JmhArCjAE": {
+    "sample": 21,
+    "consistent": "不一致",
+    "grade": "",
+    "reason": "是结构完整的 Python 工程模块，命名、模块组织和业务逻辑都正常。虽然有长行和深层缩进，但远不足以支持整洁度 0.01、可读性 0.08，对代码训练价值被明显低估。",
+    "reader": "队员乙",
+    "direction": "too_low"
+  },
+  "BkiUaaTxK7DgtAAQGltC": {
+    "sample": 22,
+    "consistent": "不一致",
+    "grade": "",
+    "reason": "Apache Hadoop 的成熟 Java 源码，有实际 shuffle 调度算法以及适量解释性注释，是典型的高价值代码训练数据。Q=0.681 尚可，但整洁度 0.03、可读性 0.10 明显不符合代码语境，整体仍偏低。",
+    "reader": "队员乙",
+    "direction": "too_low"
+  },
+  "BkiUdFk5qsBC-ZU-Hsfy": {
+    "sample": 23,
+    "consistent": "不一致",
+    "grade": "",
+    "reason": "完整的 Android 音视频编码与封装实现，属于实际工程代码，不是网页噪声。整洁度 0.01、可读性 0.09 对代码文件明显失真，因此 Q=0.642 低估了它作为代码预训练数据的价值。",
+    "reader": "队员乙",
+    "direction": "too_low"
+  },
+  "BkiUdRQ5qX_Bvg1RoNf3": {
+    "sample": 24,
+    "consistent": "不一致",
+    "grade": "",
+    "reason": "C# 文件结构完整，有参数校验、缓存读取等真实逻辑，中文注释和错误提示也具有训练价值。虽然项目本身未必顶级，但 Q=0.618 以及整洁度 0.20、可读性 0.22 仍明显偏低。",
+    "reader": "队员乙",
+    "direction": "too_low"
+  },
+  "BkiUdu_xK7FjYEB4V5om": {
+    "sample": 25,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "代码本身正确完整，但绝大部分只是实体字段、getter/setter 和 toString，高度模板化，逻辑和信息密度很低。因此即使是合法源码，也不属于很优质的代码训练样本，Q=0.626 基本合理。",
+    "reader": "队员乙",
+    "direction": null
+  },
+  "BkiUc_c25V5iqz-y3sDW": {
+    "sample": 26,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "同样属于大量 ORM 注解、getter/setter 和生命周期方法组成的 PHP 实体类，规范但样板代码占比很高。Q=0.518 的中低分与其实际训练价值比较匹配。",
+    "reader": "队员乙",
+    "direction": null
+  },
+  "BkiUdso4eIXh8AOmA7KW": {
+    "sample": 27,
+    "consistent": "一致",
+    "grade": "",
+    "reason": "单元测试本身有一定训练价值，但质量并不算特别高，甚至出现了 Assert.True(b2.Id == b2.Id)、b2.Title == b2.Title 这种永真断言，说明测试有效性存在明显问题。因此 Q=0.615 的中等偏低分比较合理。",
+    "reader": "队员乙",
+    "direction": null
+  },
+  "_meta": {
+    "readers": {
+      "队员甲": "样本 1 至 5",
+      "队员乙": "样本 6 至 27"
+    },
+    "direction_rule": "根据理由文字判定：认为 Q 偏高记 too_high，偏低记 too_low；一致或方向不明确（样本 3 的理由为与最新能源情况不符，属时效性而非质量）记 null",
+    "grade_note": "人工等级（高、中、低）未填写"
+  }
+}

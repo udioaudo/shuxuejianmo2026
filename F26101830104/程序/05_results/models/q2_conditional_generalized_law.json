@@ -1,0 +1,48 @@
+{
+  "formula": "L_B1(N,D)+c(N/1e9)^-theta_N(D/1e9)^-theta_D(1-Q)^kappa+lambda_p*[f_Q1(p)-f_Q1(p_ref)]",
+  "N_D_units": "billions of parameters and tokens",
+  "f_Q1": "equal average of 13 losses predicted by Q1 square-only model",
+  "p_reference": [
+    0.06838105814333299,
+    0.0771137239955059,
+    0.007153739229401148,
+    0.11117510563813603,
+    0.08401144277440835,
+    0.04383351652214184,
+    0.06850782480438682,
+    0.008193971774032634,
+    0.10924711776831808,
+    0.003287906671948593,
+    0.07184163773356139,
+    0.10120655832638484,
+    0.04940017674986778,
+    0.013747455162483732,
+    0.018188849699000347,
+    0.1010112632572211,
+    0.06369865174986843
+  ],
+  "mixture_transfer": {
+    "from_domain": "train_the_pile_pubmed_central",
+    "to_domain": "train_the_pile_enron_emails",
+    "fraction": 0.01
+  },
+  "lambda_p_identification": "not identifiable: B1/B6 lack varied measured mixture p; 0,.5,1 are scenarios",
+  "Q_scale_identification": "A1 Q and B6 Q_score not empirically calibrated",
+  "conditional_example": {
+    "0": {
+      "reference": 2.5026359711231456,
+      "one_percentage_point_transfer": 2.5026359711231456
+    },
+    "0.5": {
+      "reference": 2.5026359711231456,
+      "one_percentage_point_transfer": 2.4878528273235414
+    },
+    "1": {
+      "reference": 2.5026359711231456,
+      "one_percentage_point_transfer": 2.473069683523937
+    }
+  },
+  "quality_0p1_equivalent_N_B_at_original_1B_fixed_D_p": 1.3074655934382629,
+  "equivalence_assumptions": "B6 semi-synthetic c,kappa,theta_N,theta_D and A1 Q numeric alignment; not a verified real tradeoff",
+  "validity": "descriptive within sampled N,D,Q and feasible p neighborhood only"
+}

@@ -1,0 +1,824 @@
+{
+  "A1_texts_processed": 51230,
+  "A18_texts_processed": 138034,
+  "sample_cap_per_domain": 200,
+  "characters_per_document": 4000,
+  "A1_domain_counts": {
+    "arxiv": 1419,
+    "book": 171,
+    "c4": 10000,
+    "commoncrawl": 9640,
+    "github": 10000,
+    "stackexchange": 10000,
+    "wikipedia": 10000
+  },
+  "A18_domain_counts": {
+    "arxiv": 1719,
+    "dm_mathematics": 1922,
+    "enron_emails": 1010,
+    "europarl": 157,
+    "freelaw": 5100,
+    "github": 15117,
+    "gutenberg_pg_19": 79,
+    "hackernews": 944,
+    "nih_exporter": 1884,
+    "philpapers": 67,
+    "pile_cc": 18191,
+    "pubmed_abstracts": 29895,
+    "pubmed_central": 2629,
+    "stackexchange": 30378,
+    "ubuntu_irc": 16,
+    "uspto_backgrounds": 11415,
+    "wikipedia_en": 17511
+  },
+  "known_guide_pairs": 6,
+  "known_top1_correct": 5,
+  "known_top3_correct": 5,
+  "unknown_domains": 11,
+  "method": "fixed-seed reservoir + hashed character 3/4-gram mean document vectors + cosine",
+  "status": "lexical similarity only; semantic quality transfer not established",
+  "mappings": [
+    {
+      "mixture_domain": "arxiv",
+      "guide_quality_domain": "arxiv",
+      "guide_mapping_type": "direct",
+      "text_count_A18": 1719,
+      "ranked_quality_domains": [
+        {
+          "domain": "arxiv",
+          "cosine": 0.9633484482765198,
+          "A1_equal_Q": 0.7667394699326446
+        },
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.9359048008918762,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "book",
+          "cosine": 0.9145021438598633,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "c4",
+          "cosine": 0.9123867154121399,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "stackexchange",
+          "cosine": 0.8737528920173645,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "wikipedia",
+          "cosine": 0.7351161241531372,
+          "A1_equal_Q": 0.6389952946358004
+        },
+        {
+          "domain": "github",
+          "cosine": 0.6067838668823242,
+          "A1_equal_Q": 0.6030222663594819
+        }
+      ],
+      "top1_margin": 0.027443647384643555,
+      "known_mapping_rank": 1,
+      "conditional_top1_quality_proxy": 0.7667394699326446
+    },
+    {
+      "mixture_domain": "github",
+      "guide_quality_domain": "github",
+      "guide_mapping_type": "direct",
+      "text_count_A18": 15117,
+      "ranked_quality_domains": [
+        {
+          "domain": "github",
+          "cosine": 0.9079896211624146,
+          "A1_equal_Q": 0.6030222663594819
+        },
+        {
+          "domain": "stackexchange",
+          "cosine": 0.8171148300170898,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "arxiv",
+          "cosine": 0.7299918532371521,
+          "A1_equal_Q": 0.7667394699326446
+        },
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.7030489444732666,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "c4",
+          "cosine": 0.6988087296485901,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "book",
+          "cosine": 0.6965982913970947,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "wikipedia",
+          "cosine": 0.675302267074585,
+          "A1_equal_Q": 0.6389952946358004
+        }
+      ],
+      "top1_margin": 0.09087479114532471,
+      "known_mapping_rank": 1,
+      "conditional_top1_quality_proxy": 0.6030222663594819
+    },
+    {
+      "mixture_domain": "stackexchange",
+      "guide_quality_domain": "stackexchange",
+      "guide_mapping_type": "direct",
+      "text_count_A18": 30378,
+      "ranked_quality_domains": [
+        {
+          "domain": "stackexchange",
+          "cosine": 0.9836750626564026,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "c4",
+          "cosine": 0.9311319589614868,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.9216822385787964,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "book",
+          "cosine": 0.9028095006942749,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "arxiv",
+          "cosine": 0.8800355195999146,
+          "A1_equal_Q": 0.7667394699326446
+        },
+        {
+          "domain": "wikipedia",
+          "cosine": 0.7271937727928162,
+          "A1_equal_Q": 0.6389952946358004
+        },
+        {
+          "domain": "github",
+          "cosine": 0.6987236738204956,
+          "A1_equal_Q": 0.6030222663594819
+        }
+      ],
+      "top1_margin": 0.05254310369491577,
+      "known_mapping_rank": 1,
+      "conditional_top1_quality_proxy": 0.6947521608441046
+    },
+    {
+      "mixture_domain": "wikipedia_en",
+      "guide_quality_domain": "wikipedia",
+      "guide_mapping_type": "near_direct",
+      "text_count_A18": 17511,
+      "ranked_quality_domains": [
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.9345099925994873,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "book",
+          "cosine": 0.9206339716911316,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "c4",
+          "cosine": 0.9030504822731018,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "arxiv",
+          "cosine": 0.8797705173492432,
+          "A1_equal_Q": 0.7667394699326446
+        },
+        {
+          "domain": "stackexchange",
+          "cosine": 0.8302242755889893,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "wikipedia",
+          "cosine": 0.7665461301803589,
+          "A1_equal_Q": 0.6389952946358004
+        },
+        {
+          "domain": "github",
+          "cosine": 0.5415180921554565,
+          "A1_equal_Q": 0.6030222663594819
+        }
+      ],
+      "top1_margin": 0.013876020908355713,
+      "known_mapping_rank": 6,
+      "conditional_top1_quality_proxy": 0.7212389422889374
+    },
+    {
+      "mixture_domain": "gutenberg_pg_19",
+      "guide_quality_domain": "book",
+      "guide_mapping_type": "near_direct",
+      "text_count_A18": 79,
+      "ranked_quality_domains": [
+        {
+          "domain": "book",
+          "cosine": 0.9664895534515381,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.9590251445770264,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "c4",
+          "cosine": 0.9365723133087158,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "arxiv",
+          "cosine": 0.8977755308151245,
+          "A1_equal_Q": 0.7667394699326446
+        },
+        {
+          "domain": "stackexchange",
+          "cosine": 0.8611711263656616,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "wikipedia",
+          "cosine": 0.7149530649185181,
+          "A1_equal_Q": 0.6389952946358004
+        },
+        {
+          "domain": "github",
+          "cosine": 0.5110458731651306,
+          "A1_equal_Q": 0.6030222663594819
+        }
+      ],
+      "top1_margin": 0.007464408874511719,
+      "known_mapping_rank": 1,
+      "conditional_top1_quality_proxy": 0.6467752920372869
+    },
+    {
+      "mixture_domain": "pile_cc",
+      "guide_quality_domain": "commoncrawl",
+      "guide_mapping_type": "near_direct",
+      "text_count_A18": 18191,
+      "ranked_quality_domains": [
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.990639865398407,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "c4",
+          "cosine": 0.9866894483566284,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "book",
+          "cosine": 0.9726987481117249,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "stackexchange",
+          "cosine": 0.9191324710845947,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "arxiv",
+          "cosine": 0.9127895832061768,
+          "A1_equal_Q": 0.7667394699326446
+        },
+        {
+          "domain": "wikipedia",
+          "cosine": 0.7495417594909668,
+          "A1_equal_Q": 0.6389952946358004
+        },
+        {
+          "domain": "github",
+          "cosine": 0.5633965730667114,
+          "A1_equal_Q": 0.6030222663594819
+        }
+      ],
+      "top1_margin": 0.0039504170417785645,
+      "known_mapping_rank": 1,
+      "conditional_top1_quality_proxy": 0.7212389422889374
+    },
+    {
+      "mixture_domain": "dm_mathematics",
+      "guide_quality_domain": null,
+      "guide_mapping_type": "inferred",
+      "text_count_A18": 1922,
+      "ranked_quality_domains": [
+        {
+          "domain": "stackexchange",
+          "cosine": 0.43824008107185364,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.4342975616455078,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "c4",
+          "cosine": 0.4301946759223938,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "book",
+          "cosine": 0.4243725836277008,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "arxiv",
+          "cosine": 0.4186161160469055,
+          "A1_equal_Q": 0.7667394699326446
+        },
+        {
+          "domain": "wikipedia",
+          "cosine": 0.3628614544868469,
+          "A1_equal_Q": 0.6389952946358004
+        },
+        {
+          "domain": "github",
+          "cosine": 0.28544461727142334,
+          "A1_equal_Q": 0.6030222663594819
+        }
+      ],
+      "top1_margin": 0.003942519426345825,
+      "known_mapping_rank": null,
+      "conditional_top1_quality_proxy": 0.6947521608441046
+    },
+    {
+      "mixture_domain": "freelaw",
+      "guide_quality_domain": null,
+      "guide_mapping_type": "inferred",
+      "text_count_A18": 5100,
+      "ranked_quality_domains": [
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.9110855460166931,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "book",
+          "cosine": 0.8953481912612915,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "c4",
+          "cosine": 0.8843790292739868,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "arxiv",
+          "cosine": 0.8728475570678711,
+          "A1_equal_Q": 0.7667394699326446
+        },
+        {
+          "domain": "stackexchange",
+          "cosine": 0.8256078362464905,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "wikipedia",
+          "cosine": 0.7260431051254272,
+          "A1_equal_Q": 0.6389952946358004
+        },
+        {
+          "domain": "github",
+          "cosine": 0.565915584564209,
+          "A1_equal_Q": 0.6030222663594819
+        }
+      ],
+      "top1_margin": 0.01573735475540161,
+      "known_mapping_rank": null,
+      "conditional_top1_quality_proxy": 0.7212389422889374
+    },
+    {
+      "mixture_domain": "nih_exporter",
+      "guide_quality_domain": null,
+      "guide_mapping_type": "inferred",
+      "text_count_A18": 1884,
+      "ranked_quality_domains": [
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.9312192797660828,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "arxiv",
+          "cosine": 0.9283617734909058,
+          "A1_equal_Q": 0.7667394699326446
+        },
+        {
+          "domain": "c4",
+          "cosine": 0.9154518842697144,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "book",
+          "cosine": 0.9056501388549805,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "stackexchange",
+          "cosine": 0.8548403978347778,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "wikipedia",
+          "cosine": 0.7272579669952393,
+          "A1_equal_Q": 0.6389952946358004
+        },
+        {
+          "domain": "github",
+          "cosine": 0.602721095085144,
+          "A1_equal_Q": 0.6030222663594819
+        }
+      ],
+      "top1_margin": 0.002857506275177002,
+      "known_mapping_rank": null,
+      "conditional_top1_quality_proxy": 0.7212389422889374
+    },
+    {
+      "mixture_domain": "pubmed_central",
+      "guide_quality_domain": null,
+      "guide_mapping_type": "inferred",
+      "text_count_A18": 2629,
+      "ranked_quality_domains": [
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.9128363728523254,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "arxiv",
+          "cosine": 0.9072442054748535,
+          "A1_equal_Q": 0.7667394699326446
+        },
+        {
+          "domain": "c4",
+          "cosine": 0.8930988311767578,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "book",
+          "cosine": 0.8896447420120239,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "stackexchange",
+          "cosine": 0.8418236374855042,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "wikipedia",
+          "cosine": 0.7313356995582581,
+          "A1_equal_Q": 0.6389952946358004
+        },
+        {
+          "domain": "github",
+          "cosine": 0.6060094833374023,
+          "A1_equal_Q": 0.6030222663594819
+        }
+      ],
+      "top1_margin": 0.005592167377471924,
+      "known_mapping_rank": null,
+      "conditional_top1_quality_proxy": 0.7212389422889374
+    },
+    {
+      "mixture_domain": "philpapers",
+      "guide_quality_domain": null,
+      "guide_mapping_type": "inferred",
+      "text_count_A18": 67,
+      "ranked_quality_domains": [
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.9501845836639404,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "book",
+          "cosine": 0.9327176213264465,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "c4",
+          "cosine": 0.9303637742996216,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "arxiv",
+          "cosine": 0.9290152788162231,
+          "A1_equal_Q": 0.7667394699326446
+        },
+        {
+          "domain": "stackexchange",
+          "cosine": 0.88637375831604,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "wikipedia",
+          "cosine": 0.798763632774353,
+          "A1_equal_Q": 0.6389952946358004
+        },
+        {
+          "domain": "github",
+          "cosine": 0.6018321514129639,
+          "A1_equal_Q": 0.6030222663594819
+        }
+      ],
+      "top1_margin": 0.017466962337493896,
+      "known_mapping_rank": null,
+      "conditional_top1_quality_proxy": 0.7212389422889374
+    },
+    {
+      "mixture_domain": "enron_emails",
+      "guide_quality_domain": null,
+      "guide_mapping_type": "inferred",
+      "text_count_A18": 1010,
+      "ranked_quality_domains": [
+        {
+          "domain": "c4",
+          "cosine": 0.8832875490188599,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.8696566820144653,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "stackexchange",
+          "cosine": 0.8629304766654968,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "book",
+          "cosine": 0.8520385026931763,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "arxiv",
+          "cosine": 0.8040895462036133,
+          "A1_equal_Q": 0.7667394699326446
+        },
+        {
+          "domain": "wikipedia",
+          "cosine": 0.6828891634941101,
+          "A1_equal_Q": 0.6389952946358004
+        },
+        {
+          "domain": "github",
+          "cosine": 0.5658102035522461,
+          "A1_equal_Q": 0.6030222663594819
+        }
+      ],
+      "top1_margin": 0.013630867004394531,
+      "known_mapping_rank": null,
+      "conditional_top1_quality_proxy": 0.7069938884661677
+    },
+    {
+      "mixture_domain": "ubuntu_irc",
+      "guide_quality_domain": null,
+      "guide_mapping_type": "inferred",
+      "text_count_A18": 16,
+      "ranked_quality_domains": [
+        {
+          "domain": "c4",
+          "cosine": 0.797713577747345,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "stackexchange",
+          "cosine": 0.7968335151672363,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.7848879098892212,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "book",
+          "cosine": 0.7716169357299805,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "arxiv",
+          "cosine": 0.6984879970550537,
+          "A1_equal_Q": 0.7667394699326446
+        },
+        {
+          "domain": "wikipedia",
+          "cosine": 0.6490821242332458,
+          "A1_equal_Q": 0.6389952946358004
+        },
+        {
+          "domain": "github",
+          "cosine": 0.49493977427482605,
+          "A1_equal_Q": 0.6030222663594819
+        }
+      ],
+      "top1_margin": 0.0008800625801086426,
+      "known_mapping_rank": null,
+      "conditional_top1_quality_proxy": 0.7069938884661677
+    },
+    {
+      "mixture_domain": "europarl",
+      "guide_quality_domain": null,
+      "guide_mapping_type": "inferred",
+      "text_count_A18": 157,
+      "ranked_quality_domains": [
+        {
+          "domain": "wikipedia",
+          "cosine": 0.8534271717071533,
+          "A1_equal_Q": 0.6389952946358004
+        },
+        {
+          "domain": "stackexchange",
+          "cosine": 0.5973721146583557,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.5831509828567505,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "c4",
+          "cosine": 0.5782134532928467,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "book",
+          "cosine": 0.5732569098472595,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "github",
+          "cosine": 0.5601674318313599,
+          "A1_equal_Q": 0.6030222663594819
+        },
+        {
+          "domain": "arxiv",
+          "cosine": 0.555645227432251,
+          "A1_equal_Q": 0.7667394699326446
+        }
+      ],
+      "top1_margin": 0.2560550570487976,
+      "known_mapping_rank": null,
+      "conditional_top1_quality_proxy": 0.6389952946358004
+    },
+    {
+      "mixture_domain": "hackernews",
+      "guide_quality_domain": null,
+      "guide_mapping_type": "inferred",
+      "text_count_A18": 944,
+      "ranked_quality_domains": [
+        {
+          "domain": "c4",
+          "cosine": 0.9244742393493652,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.9129377603530884,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "stackexchange",
+          "cosine": 0.9098881483078003,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "book",
+          "cosine": 0.894439697265625,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "arxiv",
+          "cosine": 0.8350494503974915,
+          "A1_equal_Q": 0.7667394699326446
+        },
+        {
+          "domain": "wikipedia",
+          "cosine": 0.7046127915382385,
+          "A1_equal_Q": 0.6389952946358004
+        },
+        {
+          "domain": "github",
+          "cosine": 0.5859327912330627,
+          "A1_equal_Q": 0.6030222663594819
+        }
+      ],
+      "top1_margin": 0.011536478996276855,
+      "known_mapping_rank": null,
+      "conditional_top1_quality_proxy": 0.7069938884661677
+    },
+    {
+      "mixture_domain": "pubmed_abstracts",
+      "guide_quality_domain": null,
+      "guide_mapping_type": "inferred",
+      "text_count_A18": 29895,
+      "ranked_quality_domains": [
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.9291184544563293,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "arxiv",
+          "cosine": 0.9278431534767151,
+          "A1_equal_Q": 0.7667394699326446
+        },
+        {
+          "domain": "c4",
+          "cosine": 0.9069902896881104,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "book",
+          "cosine": 0.9059321880340576,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "stackexchange",
+          "cosine": 0.8440203666687012,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "wikipedia",
+          "cosine": 0.7419646382331848,
+          "A1_equal_Q": 0.6389952946358004
+        },
+        {
+          "domain": "github",
+          "cosine": 0.6069263219833374,
+          "A1_equal_Q": 0.6030222663594819
+        }
+      ],
+      "top1_margin": 0.0012753009796142578,
+      "known_mapping_rank": null,
+      "conditional_top1_quality_proxy": 0.7212389422889374
+    },
+    {
+      "mixture_domain": "uspto_backgrounds",
+      "guide_quality_domain": null,
+      "guide_mapping_type": "inferred",
+      "text_count_A18": 11415,
+      "ranked_quality_domains": [
+        {
+          "domain": "commoncrawl",
+          "cosine": 0.9519820213317871,
+          "A1_equal_Q": 0.7212389422889374
+        },
+        {
+          "domain": "arxiv",
+          "cosine": 0.9405854940414429,
+          "A1_equal_Q": 0.7667394699326446
+        },
+        {
+          "domain": "c4",
+          "cosine": 0.9361146092414856,
+          "A1_equal_Q": 0.7069938884661677
+        },
+        {
+          "domain": "book",
+          "cosine": 0.9276091456413269,
+          "A1_equal_Q": 0.6467752920372869
+        },
+        {
+          "domain": "stackexchange",
+          "cosine": 0.8850671052932739,
+          "A1_equal_Q": 0.6947521608441046
+        },
+        {
+          "domain": "wikipedia",
+          "cosine": 0.7307554483413696,
+          "A1_equal_Q": 0.6389952946358004
+        },
+        {
+          "domain": "github",
+          "cosine": 0.5835926532745361,
+          "A1_equal_Q": 0.6030222663594819
+        }
+      ],
+      "top1_margin": 0.011396527290344238,
+      "known_mapping_rank": null,
+      "conditional_top1_quality_proxy": 0.7212389422889374
+    }
+  ]
+}

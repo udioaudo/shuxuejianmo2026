@@ -1,0 +1,26 @@
+{
+  "status": "associational_model_sensitivity_not_causal_identification",
+  "matched_models": 55,
+  "organizations": 18,
+  "bootstrap_unit": "organization",
+  "repetitions_requested": 600,
+  "repetitions_used": 600,
+  "seed": 20260923,
+  "observed_cohort_score_change": 10.264139305685896,
+  "full_sample_scale_association": 7.034200689554516,
+  "full_sample_time_association": 3.207693776046584,
+  "scale_association_2p5_97p5": [
+    3.194711116790151,
+    11.745535651702683
+  ],
+  "time_association_2p5_97p5": [
+    1.0044777729462857,
+    8.11790096016807
+  ],
+  "scale_share_if_total_magnitude_ge_2_n": 600,
+  "scale_share_2p5_97p5_conditional": [
+    0.41292548589024797,
+    0.9004842709497438
+  ],
+  "warning": "Calendar coefficient also absorbs data quality, architecture, post-training and selection; do not call it a causal technology share."
+}

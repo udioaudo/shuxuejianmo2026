@@ -1,0 +1,36 @@
+{
+  "B1_observed_range_B": {
+    "N": [
+      0.070542,
+      11.965825
+    ],
+    "D": [
+      0.134,
+      299.893
+    ]
+  },
+  "B9": {
+    "rows": 132,
+    "N_range_B": [
+      100.0,
+      10000.0
+    ],
+    "positive_D_range_B": [
+      0.1,
+      36000.0
+    ],
+    "D_zero_or_missing_rows": 4,
+    "N_outside_B1": 132,
+    "positive_D_outside_B1": 105
+  },
+  "B10": {
+    "rows": 128,
+    "numeric_rows": 128,
+    "N_outside_B1": 128,
+    "D_outside_B1": 105,
+    "MAE_vs_estimated_not_observed_loss": 0.000614048832997963,
+    "estimated_loss_mean": 2.00786328125,
+    "model_prediction_mean": 2.0084773300829983
+  },
+  "conclusion": "B9 shows distance beyond training support; B10 estimates are not independent real verification."
+}

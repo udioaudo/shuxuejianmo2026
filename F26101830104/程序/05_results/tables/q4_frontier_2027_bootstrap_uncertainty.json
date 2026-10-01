@@ -1,0 +1,109 @@
+{
+  "target_date": "2027-09-23",
+  "repetitions_requested": 160,
+  "successful_per_scenario": 160,
+  "fit_failures": 0,
+  "seed": 20260923,
+  "bootstrap_unit": "C1 and matched C1/C4 model organization; C4 annual compute rows",
+  "conditional_model_and_driver_2p5_to_97p5": [
+    23.327954731408308,
+    45.828338763007814
+  ],
+  "scenario_central_minmax": [
+    27.019630255866318,
+    27.79307408385725
+  ],
+  "by_scenario": [
+    {
+      "compute_scenario": "no_further_compute_growth",
+      "time_scenario": "time_frozen_at_last_score",
+      "central_fitted_score": 27.019630255866318,
+      "bootstrap_2p5_to_97p5": [
+        22.933703822581112,
+        34.728215340332895
+      ],
+      "bootstrap_median": 27.549087107777368
+    },
+    {
+      "compute_scenario": "no_further_compute_growth",
+      "time_scenario": "half_time_trend",
+      "central_fitted_score": 27.019630255866318,
+      "bootstrap_2p5_to_97p5": [
+        22.933703822581112,
+        40.66799208242406
+      ],
+      "bootstrap_median": 27.9822760101219
+    },
+    {
+      "compute_scenario": "no_further_compute_growth",
+      "time_scenario": "full_time_trend",
+      "central_fitted_score": 27.019630255866318,
+      "bootstrap_2p5_to_97p5": [
+        22.933703822581112,
+        47.582757745981674
+      ],
+      "bootstrap_median": 28.181848589740177
+    },
+    {
+      "compute_scenario": "half_2024_to_2025_growth",
+      "time_scenario": "time_frozen_at_last_score",
+      "central_fitted_score": 27.40635216986179,
+      "bootstrap_2p5_to_97p5": [
+        23.566188332102328,
+        35.883467403431005
+      ],
+      "bootstrap_median": 27.981420254758604
+    },
+    {
+      "compute_scenario": "half_2024_to_2025_growth",
+      "time_scenario": "half_time_trend",
+      "central_fitted_score": 27.40635216986179,
+      "bootstrap_2p5_to_97p5": [
+        23.566188332102328,
+        41.557038875857266
+      ],
+      "bootstrap_median": 28.46994751009355
+    },
+    {
+      "compute_scenario": "half_2024_to_2025_growth",
+      "time_scenario": "full_time_trend",
+      "central_fitted_score": 27.40635216986179,
+      "bootstrap_2p5_to_97p5": [
+        23.566188332102328,
+        48.94874524290546
+      ],
+      "bootstrap_median": 28.75271993604565
+    },
+    {
+      "compute_scenario": "same_2024_to_2025_growth",
+      "time_scenario": "time_frozen_at_last_score",
+      "central_fitted_score": 27.79307408385725,
+      "bootstrap_2p5_to_97p5": [
+        23.4314979791498,
+        37.19302015929104
+      ],
+      "bootstrap_median": 28.40192579750344
+    },
+    {
+      "compute_scenario": "same_2024_to_2025_growth",
+      "time_scenario": "half_time_trend",
+      "central_fitted_score": 27.79307408385725,
+      "bootstrap_2p5_to_97p5": [
+        23.4314979791498,
+        42.712010275401994
+      ],
+      "bootstrap_median": 29.082629056464473
+    },
+    {
+      "compute_scenario": "same_2024_to_2025_growth",
+      "time_scenario": "full_time_trend",
+      "central_fitted_score": 27.79307408385725,
+      "bootstrap_2p5_to_97p5": [
+        23.4314979791498,
+        50.63179081079214
+      ],
+      "bootstrap_median": 29.273698106905915
+    }
+  ],
+  "coverage_warning": "This is NOT a 95% prediction interval for real 2027 frontier. Historical score backtest is 2024->2025 only; long-horizon shift and Loss-bridge uncertainty are not covered."
+}

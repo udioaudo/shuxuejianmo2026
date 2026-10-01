@@ -1,0 +1,45 @@
+{
+  "dataset": "C1 same six benchmark task columns",
+  "model_filter": "Type exactly pretrained, nonmissing Hub License and parameters",
+  "date_basis": "submission date (not model release date)",
+  "n_train_2024": 184,
+  "n_test_2025": 49,
+  "latest_test_date": "2025-03-09",
+  "training_q90_constant": {
+    "test_n": 49,
+    "q90_train": 24.972426876804,
+    "actual_fraction_at_or_below": 0.9387755102040817
+  },
+  "size_only": {
+    "features": [
+      "log10_N"
+    ],
+    "test_n": 49,
+    "nominal_upper_quantile": 0.9,
+    "actual_fraction_at_or_below": 0.8979591836734694,
+    "pinball_loss": 0.8402550697826996,
+    "mean_exceedance_when_exceeded": 4.476185751941765,
+    "prediction_range": [
+      8.39927772556529,
+      24.880895621799635
+    ]
+  },
+  "size_plus_submission_time": {
+    "features": [
+      "log10_N",
+      "t_years"
+    ],
+    "test_n": 49,
+    "nominal_upper_quantile": 0.9,
+    "actual_fraction_at_or_below": 0.9183673469387755,
+    "pinball_loss": 0.8096437811496254,
+    "mean_exceedance_when_exceeded": 2.6918590695987135,
+    "prediction_range": [
+      10.041307183214197,
+      27.200604652762657
+    ]
+  },
+  "model_family_caveat": "Same organizations may occur in both years; this is time holdout, not family holdout.",
+  "weight_access_caveat": "C1 license present is an operational filter; individual license rights not audited.",
+  "future_limit": "Any 2027 extrapolation goes more than two years beyond measured C1 scores."
+}

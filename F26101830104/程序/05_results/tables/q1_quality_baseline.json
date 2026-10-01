@@ -1,0 +1,368 @@
+{
+  "method": "exploratory_equal_and_equal_group_weight_22_signal_scores",
+  "normalization_reference": "A1 pooled 1st and 99th percentiles; A2/A3 reuse bounds",
+  "source_semantics": "Source dataset card consulted for logits ordering and QuRating components",
+  "indicator_order": [
+    "ad_en",
+    "dsir_books",
+    "dsir_math",
+    "dsir_wiki",
+    "fineweb_edu",
+    "fluency_en",
+    "modernbert_cleanliness",
+    "modernbert_professionalism",
+    "modernbert_readability",
+    "modernbert_reasoning",
+    "qurater",
+    "rps_doc_frac_chars_top_2gram",
+    "rps_doc_frac_chars_top_3gram",
+    "rps_doc_frac_no_alph_words",
+    "rps_doc_frac_unique_words",
+    "rps_doc_mean_word_length",
+    "rps_doc_num_sentences",
+    "rps_doc_unigram_entropy",
+    "rps_doc_word_count",
+    "rps_lines_ending_with_terminal_punctution_mark",
+    "rps_lines_numerical_chars_fraction",
+    "rps_lines_uppercase_letter_fraction"
+  ],
+  "uncertain_direction_or_shape_fields": [
+    "qurater",
+    "rps_doc_mean_word_length",
+    "rps_doc_num_sentences",
+    "rps_doc_word_count",
+    "rps_lines_numerical_chars_fraction"
+  ],
+  "constant_indicators": [],
+  "word_length_anchor": 5.322730202758136,
+  "indicator_config": [
+    {
+      "name": "ad_en",
+      "direction": 1,
+      "lower": 0.030764043536685718,
+      "upper": 0.9997009699987189
+    },
+    {
+      "name": "dsir_books",
+      "direction": 1,
+      "lower": -56918.4092252888,
+      "upper": -232.54878165960002
+    },
+    {
+      "name": "dsir_math",
+      "direction": 1,
+      "lower": -45615.732442883906,
+      "upper": -227.74308688770012
+    },
+    {
+      "name": "dsir_wiki",
+      "direction": 1,
+      "lower": -60860.8279476777,
+      "upper": -228.26818290040012
+    },
+    {
+      "name": "fineweb_edu",
+      "direction": 1,
+      "lower": 0.034469933509826654,
+      "upper": 3.2404500007629395
+    },
+    {
+      "name": "fluency_en",
+      "direction": 1,
+      "lower": 0.032651378460344445,
+      "upper": 0.9992145260642746
+    },
+    {
+      "name": "modernbert_cleanliness",
+      "direction": 1,
+      "lower": 1.000304780143154,
+      "upper": 4.999998396127174
+    },
+    {
+      "name": "modernbert_professionalism",
+      "direction": 1,
+      "lower": 1.0005013987422924,
+      "upper": 4.999947958320138
+    },
+    {
+      "name": "modernbert_readability",
+      "direction": 1,
+      "lower": 1.002862470345333,
+      "upper": 4.992061751156747
+    },
+    {
+      "name": "modernbert_reasoning",
+      "direction": 1,
+      "lower": 0.018726767107707234,
+      "upper": 4.999966154990021
+    },
+    {
+      "name": "qurater",
+      "direction": 1,
+      "lower": -4.053837890625,
+      "upper": 5.44970703125
+    },
+    {
+      "name": "rps_doc_frac_chars_top_2gram",
+      "direction": -1,
+      "lower": 0.0,
+      "upper": 21.0
+    },
+    {
+      "name": "rps_doc_frac_chars_top_3gram",
+      "direction": -1,
+      "lower": 0.0,
+      "upper": 20.63594320725811
+    },
+    {
+      "name": "rps_doc_frac_no_alph_words",
+      "direction": -1,
+      "lower": 16.636897675691845,
+      "upper": 99.90756177631864
+    },
+    {
+      "name": "rps_doc_frac_unique_words",
+      "direction": 1,
+      "lower": 17.204759645793803,
+      "upper": 100.0
+    },
+    {
+      "name": "rps_doc_mean_word_length",
+      "direction": 1,
+      "lower": -11.31824382321589,
+      "upper": -0.013155413306990727
+    },
+    {
+      "name": "rps_doc_num_sentences",
+      "direction": 1,
+      "lower": 0.6931471805599453,
+      "upper": 6.632171431125924
+    },
+    {
+      "name": "rps_doc_unigram_entropy",
+      "direction": 1,
+      "lower": 2.1371304051999997,
+      "upper": 6.325648439699999
+    },
+    {
+      "name": "rps_doc_word_count",
+      "direction": 1,
+      "lower": 2.3978952727983707,
+      "upper": 9.23043408489158
+    },
+    {
+      "name": "rps_lines_ending_with_terminal_punctution_mark",
+      "direction": 1,
+      "lower": 0.4300563580039559,
+      "upper": 100.0
+    },
+    {
+      "name": "rps_lines_numerical_chars_fraction",
+      "direction": -1,
+      "lower": 0.0,
+      "upper": 19.177330331870227
+    },
+    {
+      "name": "rps_lines_uppercase_letter_fraction",
+      "direction": -1,
+      "lower": 1.1270577141703508,
+      "upper": 52.7577506193827
+    }
+  ],
+  "list_compression": {
+    "modernbert": "softmax expected class 0..5",
+    "ad_en": "probability of no-ad class (index 1)",
+    "fluency_en": "probability of fluent class (index 1)",
+    "qurater": "mean of 4 source ratings",
+    "fineweb_edu": "single list element"
+  },
+  "coverage_policy": "weighted available fraction >= 0.8; otherwise retain row with Q null",
+  "conflict_policy": "four predeclared high>=.8/low<=.2 semantic tensions on fixed A1 scale",
+  "scores": {
+    "A1": {
+      "rows": 51230,
+      "scored_equal": 51230,
+      "scored_grouped": 51230,
+      "clipped_values_equal": 19397,
+      "conflict_evaluable": 51230,
+      "conflict_count": 6,
+      "semantic_conflict_counts": {
+        "education_vs_no_ad": 6,
+        "qurater_vs_cleanliness": 0,
+        "reasoning_vs_readability": 120,
+        "fluency_vs_cleanliness": 594
+      },
+      "domains_equal": [
+        {
+          "domain": "arxiv",
+          "n_total": 1419,
+          "n_scored": 1419,
+          "n_missing": 0,
+          "quality_mean": 0.7667394699326446
+        },
+        {
+          "domain": "book",
+          "n_total": 171,
+          "n_scored": 171,
+          "n_missing": 0,
+          "quality_mean": 0.6467752920372869
+        },
+        {
+          "domain": "c4",
+          "n_total": 10000,
+          "n_scored": 10000,
+          "n_missing": 0,
+          "quality_mean": 0.7069938884661677
+        },
+        {
+          "domain": "commoncrawl",
+          "n_total": 9640,
+          "n_scored": 9640,
+          "n_missing": 0,
+          "quality_mean": 0.7212389422889374
+        },
+        {
+          "domain": "github",
+          "n_total": 10000,
+          "n_scored": 10000,
+          "n_missing": 0,
+          "quality_mean": 0.6030222663594819
+        },
+        {
+          "domain": "stackexchange",
+          "n_total": 10000,
+          "n_scored": 10000,
+          "n_missing": 0,
+          "quality_mean": 0.6947521608441046
+        },
+        {
+          "domain": "wikipedia",
+          "n_total": 10000,
+          "n_scored": 10000,
+          "n_missing": 0,
+          "quality_mean": 0.6389952946358004
+        }
+      ],
+      "domains_grouped": [
+        {
+          "domain": "arxiv",
+          "n_total": 1419,
+          "n_scored": 1419,
+          "n_missing": 0,
+          "quality_mean": 0.6950074913188834
+        },
+        {
+          "domain": "book",
+          "n_total": 171,
+          "n_scored": 171,
+          "n_missing": 0,
+          "quality_mean": 0.5335918277136601
+        },
+        {
+          "domain": "c4",
+          "n_total": 10000,
+          "n_scored": 10000,
+          "n_missing": 0,
+          "quality_mean": 0.7551951737136241
+        },
+        {
+          "domain": "commoncrawl",
+          "n_total": 9640,
+          "n_scored": 9640,
+          "n_missing": 0,
+          "quality_mean": 0.7619994560059663
+        },
+        {
+          "domain": "github",
+          "n_total": 10000,
+          "n_scored": 10000,
+          "n_missing": 0,
+          "quality_mean": 0.6696262274528784
+        },
+        {
+          "domain": "stackexchange",
+          "n_total": 10000,
+          "n_scored": 10000,
+          "n_missing": 0,
+          "quality_mean": 0.7551641141373925
+        },
+        {
+          "domain": "wikipedia",
+          "n_total": 10000,
+          "n_scored": 10000,
+          "n_missing": 0,
+          "quality_mean": 0.7084577128276773
+        }
+      ]
+    },
+    "A2": {
+      "rows": 17523,
+      "scored_equal": 17523,
+      "scored_grouped": 17523,
+      "clipped_values_equal": 39784,
+      "conflict_evaluable": 17523,
+      "conflict_count": 0,
+      "semantic_conflict_counts": {
+        "education_vs_no_ad": 0,
+        "qurater_vs_cleanliness": 0,
+        "reasoning_vs_readability": 9,
+        "fluency_vs_cleanliness": 15
+      },
+      "domains_equal": [
+        {
+          "domain": "arxiv",
+          "n_total": 17523,
+          "n_scored": 17523,
+          "n_missing": 0,
+          "quality_mean": 0.764499519214277
+        }
+      ],
+      "domains_grouped": [
+        {
+          "domain": "arxiv",
+          "n_total": 17523,
+          "n_scored": 17523,
+          "n_missing": 0,
+          "quality_mean": 0.6890500342043232
+        }
+      ]
+    },
+    "A3": {
+      "rows": 203752,
+      "scored_equal": 203752,
+      "scored_grouped": 203752,
+      "clipped_values_equal": 113494,
+      "conflict_evaluable": 203752,
+      "conflict_count": 0,
+      "semantic_conflict_counts": {
+        "education_vs_no_ad": 0,
+        "qurater_vs_cleanliness": 1,
+        "reasoning_vs_readability": 2487,
+        "fluency_vs_cleanliness": 12368
+      },
+      "domains_equal": [
+        {
+          "domain": "github",
+          "n_total": 203752,
+          "n_scored": 203752,
+          "n_missing": 0,
+          "quality_mean": 0.6022361004936249
+        }
+      ],
+      "domains_grouped": [
+        {
+          "domain": "github",
+          "n_total": 203752,
+          "n_scored": 203752,
+          "n_missing": 0,
+          "quality_mean": 0.6691852772576632
+        }
+      ]
+    }
+  },
+  "id_overlap": {
+    "A1_A2": 1419,
+    "A1_A3": 10000,
+    "A2_A3": 0
+  }
+}

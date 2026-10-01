@@ -1,0 +1,85 @@
+{
+  "model": "ridge on linear/squared/pairwise terms in first 16 simplex coordinates",
+  "warning": "Coefficients are not causal independent domain effects; one domain omitted as reference.",
+  "selection": "5-fold within 1M training recipes only; A6-A15 never tuned",
+  "candidates": [
+    {
+      "alpha": 0.1,
+      "cv_mae_over_all_13": 0.3932620981111918
+    },
+    {
+      "alpha": 1,
+      "cv_mae_over_all_13": 0.39008968323959614
+    },
+    {
+      "alpha": 10,
+      "cv_mae_over_all_13": 0.3863762178761843
+    },
+    {
+      "alpha": 100,
+      "cv_mae_over_all_13": 0.38454713356776343
+    },
+    {
+      "alpha": 1000,
+      "cv_mae_over_all_13": 0.4444357971301811
+    }
+  ],
+  "chosen_alpha": 100,
+  "cv_mae_over_all_13": 0.38454713356776343,
+  "square_only_feature_count": 32,
+  "square_only_alpha": 1,
+  "square_only_cv_mae": 0.326378034905595,
+  "saved_primary_model": "05_results\\models\\q1_square_mixture_model.joblib",
+  "linear_cv_mae_mean_over_13": 0.4172661860604939,
+  "feature_count": 152,
+  "per_set": {
+    "train": {
+      "n": 512,
+      "mae_mean_13": 0.2953027296555671,
+      "linear_mae_mean_13": 0.4033755634044358,
+      "square_only_mae_mean_13": 0.30284891877969483,
+      "spearman_mean_13": 0.9144906715990888,
+      "data_status": "real"
+    },
+    "test_1m": {
+      "n": 256,
+      "mae_mean_13": 0.35159188759093946,
+      "linear_mae_mean_13": 0.385847566611854,
+      "square_only_mae_mean_13": 0.3058486063261571,
+      "spearman_mean_13": 0.8346043254925435,
+      "data_status": "real"
+    },
+    "test_60m": {
+      "n": 256,
+      "mae_mean_13": 1.4686400407957363,
+      "linear_mae_mean_13": 1.5143262339365562,
+      "square_only_mae_mean_13": 1.4926219106112717,
+      "spearman_mean_13": 0.8376024481926861,
+      "data_status": "real"
+    },
+    "test_1B": {
+      "n": 64,
+      "mae_mean_13": 2.9503985356816633,
+      "linear_mae_mean_13": 3.188168369345422,
+      "square_only_mae_mean_13": 2.996710812663836,
+      "spearman_mean_13": 0.805540293040293,
+      "data_status": "real"
+    },
+    "est_10b": {
+      "n": 63,
+      "mae_mean_13": 3.5639990130996484,
+      "linear_mae_mean_13": 3.5765307074498045,
+      "square_only_mae_mean_13": 3.568310950797357,
+      "spearman_mean_13": 0.4982807960044049,
+      "data_status": "estimated_not_observed"
+    },
+    "est_70b": {
+      "n": 63,
+      "mae_mean_13": 3.9465733720740075,
+      "linear_mae_mean_13": 3.9591050664241627,
+      "square_only_mae_mean_13": 3.951224015510422,
+      "spearman_mean_13": 0.41436034500599983,
+      "data_status": "estimated_not_observed"
+    }
+  }
+}

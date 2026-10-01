@@ -1,0 +1,43 @@
+{
+  "basis": "mean of top 10% training recipes by equal-domain validation Loss",
+  "source": "Q1 saved model output from A4/A5 only",
+  "domains": [
+    "arxiv",
+    "freelaw",
+    "nih_exporter",
+    "pubmed_central",
+    "wikipedia_en",
+    "dm_mathematics",
+    "github",
+    "philpapers",
+    "stackexchange",
+    "enron_emails",
+    "gutenberg_pg_19",
+    "pile_cc",
+    "ubuntu_irc",
+    "europarl",
+    "hackernews",
+    "pubmed_abstracts",
+    "uspto_backgrounds"
+  ],
+  "weights": [
+    0.06838105814333299,
+    0.0771137239955059,
+    0.007153739229401148,
+    0.11117510563813603,
+    0.08401144277440835,
+    0.04383351652214184,
+    0.06850782480438682,
+    0.008193971774032634,
+    0.10924711776831808,
+    0.003287906671948593,
+    0.07184163773356139,
+    0.10120655832638484,
+    0.04940017674986778,
+    0.013747455162483732,
+    0.018188849699000347,
+    0.1010112632572211,
+    0.06369865174986843
+  ],
+  "status": "fixed reference mixture, not cross-scale optimal"
+}

@@ -1,0 +1,110 @@
+{
+  "dataset": "A6/A7 1M holdout, 256 matched recipes",
+  "model": "Q1 saved square-only model selected only on A4/A5",
+  "mean_model_MAE_13": 0.3058486063261571,
+  "mean_baseline_MAE_13": 0.6193481061510773,
+  "mean_improvement": 0.3134994998249202,
+  "improved_validation_domains": 13,
+  "total_validation_domains": 13,
+  "improvement_bootstrap_recipe_95pct_percentile_interval": [
+    0.29843545651760645,
+    0.3287570824752684
+  ],
+  "bootstrap_unit": "recipe index; all 13 domain losses in a recipe resampled together",
+  "bootstrap_repetitions": 2000,
+  "seed": 20260923,
+  "per_domain": [
+    {
+      "domain_loss": "metric/the_pile_arxiv_val_loss",
+      "model_MAE": 0.40512315121694537,
+      "baseline_MAE": 0.6616908192154369,
+      "MAE_improvement": 0.25656766799849157,
+      "improved": true
+    },
+    {
+      "domain_loss": "metric/the_pile_freelaw_val_loss",
+      "model_MAE": 0.3347547205260567,
+      "baseline_MAE": 0.6284809671633411,
+      "MAE_improvement": 0.2937262466372844,
+      "improved": true
+    },
+    {
+      "domain_loss": "metric/the_pile_pubmed_central_val_loss",
+      "model_MAE": 0.35511836318159073,
+      "baseline_MAE": 0.7518351070575591,
+      "MAE_improvement": 0.39671674387596834,
+      "improved": true
+    },
+    {
+      "domain_loss": "metric/the_pile_wikipedia_en_val_loss",
+      "model_MAE": 0.1827608913308509,
+      "baseline_MAE": 0.45798412797012134,
+      "MAE_improvement": 0.2752232366392704,
+      "improved": true
+    },
+    {
+      "domain_loss": "metric/the_pile_dm_mathematics_val_loss",
+      "model_MAE": 0.8512294559083319,
+      "baseline_MAE": 1.455323391721322,
+      "MAE_improvement": 0.6040939358129901,
+      "improved": true
+    },
+    {
+      "domain_loss": "metric/the_pile_github_val_loss",
+      "model_MAE": 0.3982033825324238,
+      "baseline_MAE": 0.8036196430584823,
+      "MAE_improvement": 0.4054162605260585,
+      "improved": true
+    },
+    {
+      "domain_loss": "metric/the_pile_stackexchange_val_loss",
+      "model_MAE": 0.2860866784125128,
+      "baseline_MAE": 0.5574903953165631,
+      "MAE_improvement": 0.2714037169040503,
+      "improved": true
+    },
+    {
+      "domain_loss": "metric/the_pile_gutenberg_pg_19_val_loss",
+      "model_MAE": 0.14208682291685915,
+      "baseline_MAE": 0.377411037843558,
+      "MAE_improvement": 0.23532421492669886,
+      "improved": true
+    },
+    {
+      "domain_loss": "metric/the_pile_pile_cc_val_loss",
+      "model_MAE": 0.09265054014712235,
+      "baseline_MAE": 0.2616700470971409,
+      "MAE_improvement": 0.16901950695001858,
+      "improved": true
+    },
+    {
+      "domain_loss": "metric/the_pile_ubuntu_irc_val_loss",
+      "model_MAE": 0.4461081335370394,
+      "baseline_MAE": 0.9077590291853994,
+      "MAE_improvement": 0.46165089564836004,
+      "improved": true
+    },
+    {
+      "domain_loss": "metric/the_pile_hackernews_val_loss",
+      "model_MAE": 0.11577208420249784,
+      "baseline_MAE": 0.2837282214895822,
+      "MAE_improvement": 0.16795613728708436,
+      "improved": true
+    },
+    {
+      "domain_loss": "metric/the_pile_pubmed_abstracts_val_loss",
+      "model_MAE": 0.14666055826559327,
+      "baseline_MAE": 0.47394343944324646,
+      "MAE_improvement": 0.3272828811776532,
+      "improved": true
+    },
+    {
+      "domain_loss": "metric/the_pile_uspto_backgrounds_val_loss",
+      "model_MAE": 0.2194771000622184,
+      "baseline_MAE": 0.4305891534022521,
+      "MAE_improvement": 0.21111205334003372,
+      "improved": true
+    }
+  ],
+  "caveat": "Interval summarizes finite-recipe sampling variation only; does not cover domain/model-scale shift."
+}
